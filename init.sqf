@@ -1,4 +1,3 @@
-publicvariable "publictime";
 enableSaving [false, false];
 enableSentences false;
 if (isServer) then {
