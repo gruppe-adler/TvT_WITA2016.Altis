@@ -1,0 +1,49 @@
+OnLoadMission = "One Agent vs. one Team";
+author="XiviD";  //appears as author in overview and loading screen
+overviewText="An enemy agent is somewhere on the Island. Hunt him down and kill him."; //appears in overview and loading screen
+onLoadName="Where is the Agent?"; //mission name for loading screen only
+overviewPicture="pic\WITA.jpg"; //mission picture for loading screen only
+onLoadMissionTime = True;
+respawn=3;
+respawnDelay = 15;
+disabledAI = 0;
+enableDebugConsole = 1;
+
+
+#include "ASORVS\menu.hpp"
+class CfgFunctions
+{
+	#include "ASORVS\cfgfunctions.hpp"
+};
+
+
+
+
+debriefing =1;
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Special Forces win";
+		subtitle = "The agent was eliminated";
+		description = "The Special Forces successfully located the rogue agent and eliminated him.";
+	};
+	
+	class End2
+	{
+		title = "Agent wins";
+		subtitle = "The agent escaped";
+		description = "The agent named Orange managed to escape the independent army.";
+	};
+};
+
+class Params
+{
+  class CIVILIAN_TRAFFIC 
+  {
+    title = "Civilian Traffic";
+    values[] = {0, 1};
+    texts[] =  {"False", "True"};
+    default = 1;
+  };
+};
