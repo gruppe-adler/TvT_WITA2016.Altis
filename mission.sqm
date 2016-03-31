@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=525;
+		nextID=526;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11426.022,28.665163,13072.809};
-		dir[]={0.85551232,-0.50354397,-0.12122954};
-		up[]={0.49859381,0.86395144,-0.070651323};
-		aside[]={-0.14031264,-1.8288847e-007,-0.99018008};
+		pos[]={11744.457,71.938438,18287.559};
+		dir[]={-0.045993157,-0.54154384,0.8394286};
+		up[]={-0.029627554,0.84067011,0.54073745};
+		aside[]={0.99851632,-1.2114469e-007,0.054709505};
 	};
 };
 binarizationWanted=0;
@@ -64,10 +64,38 @@ class ScenarioData
 {
 	author="XiviD";
 };
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -4689,7 +4717,7 @@ class Mission
 			{
 				text="Bodyguard Spawn";
 				condition="true";
-				onActivation="bg setpos (getpos officer);";
+				onActivation="bg setPos (getPos officer vectorAdd [0,1,0]);";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -4789,7 +4817,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11742.334,54.300312,18303.041};
+						position[]={11742.334,54.300308,18303.041};
 					};
 					side="Independent";
 					flags=3;
@@ -4825,7 +4853,7 @@ class Mission
 					};
 					class Attributes
 					{
-						init="0 = officer execVM ""marker.sqf""; comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_BG_Guerilla1_1"";  this addItemToUniform ""FirstAidKit"";  this addItemToUniform ""rhs_45Rnd_545X39_AK"";  this addVest ""V_BandollierB_oli"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 5 do {this addItemToVest ""ACE_morphine"";};  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_45Rnd_545X39_AK"";};  this addItemToVest ""ACE_HandFlare_White"";  this addItemToVest ""rhs_mag_nspd"";  this addHeadgear ""H_MilCap_dgtl"";  this addGoggles ""G_Aviator"";    comment ""Add weapons"";  this addWeapon ""rhs_weap_ak105"";  this addPrimaryWeaponItem ""rhs_acc_pgs64"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak""; ";
+						init="0 = officer execVM ""marker.sqf""; comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_BG_Guerilla1_1"";  this addItemToUniform ""FirstAidKit"";  this addItemToUniform ""rhs_45Rnd_545X39_AK"";  this addVest ""V_BandollierB_oli"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 5 do {this addItemToVest ""ACE_morphine"";};  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_45Rnd_545X39_AK"";};  this addItemToVest ""ACE_HandFlare_White"";  this addItemToVest ""rhs_mag_nspd"";  this addHeadgear ""H_MilCap_dgtl"";    comment ""Add weapons"";  this addWeapon ""rhs_weap_ak105"";  this addPrimaryWeaponItem ""rhs_acc_pgs64"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak"";   ";
 						name="officer";
 						placementRadius=200;
 						description="Agent";
@@ -4916,10 +4944,10 @@ class Mission
 									};
 								};
 							};
+							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="tf_fadak";
-							goggles="G_Aviator";
 							headgear="H_MilCap_dgtl";
 						};
 					};
@@ -4980,7 +5008,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""FirstAidKit"";  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""rhsusf_mag_15Rnd_9x19_FMJ"";};  this addVest ""V_TacVestEX_C"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 5 do {this addItemToVest ""ACE_morphine"";};  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  this addItemToVest ""ACE_HandFlare_White"";  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_nspd"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_mag_15Rnd_9x19_JHP"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_30Rnd_545x39_AK"";};  this addHeadgear ""rhsusf_opscore_fg"";    comment ""Add weapons"";  this addWeapon ""rhs_weap_ak105"";  this addPrimaryWeaponItem ""rhs_acc_dtk"";  this addWeapon ""rhsusf_weap_m9"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak"";  ";
+						init="comment ""Exported from Arsenal by XiviD"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""FirstAidKit"";  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""rhsusf_mag_15Rnd_9x19_FMJ"";};  this addVest ""V_TacVestEX_C"";  this addItemToVest ""ACE_EarPlugs"";  for ""_i"" from 1 to 5 do {this addItemToVest ""ACE_morphine"";};  for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";};  this addItemToVest ""ACE_HandFlare_White"";  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_nspd"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_mag_15Rnd_9x19_JHP"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_30Rnd_545x39_AK"";};  this addHeadgear ""rhsusf_opscore_fg"";    comment ""Add weapons"";  this addWeapon ""rhs_weap_ak105"";  this addPrimaryWeaponItem ""rhs_acc_dtk"";  this addWeapon ""rhsusf_weap_m9"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak"";  ";
 						name="bg";
 						description="Bodyguard";
 						isPlayable=1;
@@ -5091,6 +5119,7 @@ class Mission
 									};
 								};
 							};
+							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="tf_fadak";
@@ -5215,7 +5244,7 @@ class Mission
 			{
 				text="Heli  Spawn";
 				condition="true";
-				onActivation="hint ""Heli""; crashheli setPos (getPos officer vectorAdd [20,20,0]);";
+				onActivation="hint ""Heli""; crashheli setPos (getPos officer vectorAdd [20,20,0]); ground = createVehicle [""CraterLong"", getPos crashheli, [], 0, ""CAN_COLLIDE""];";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
