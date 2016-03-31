@@ -1,7 +1,9 @@
 publicvariable "publictime";
 enableSaving [false, false];
 enableSentences false;
-nul = [] execVM "time.sqf";
+if (isServer) then {
+	nul = [] execVM "time.sqf";
+};
 setviewdistance 3500;
 
 
