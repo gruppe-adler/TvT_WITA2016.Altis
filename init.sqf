@@ -1,8 +1,11 @@
 enableSaving [false, false];
 enableSentences false;
+
 if (isServer) then {
 	nul = [] execVM "time.sqf";
+
 };
+
 setviewdistance 3500;
 
 
