@@ -48,7 +48,9 @@ _inner_marker setMarkerPos _markerPos;
 _helper_marker setMarkerPos _markerPos;
 _pulsespeed = 0.02;
 _pulsesize = 0.01;
-	while {true} do
+_sleepTime = call gps_sleep_time;
+_currentTime = serverTime;
+	while {serverTime - _currentTime  < _sleepTime} do
 		{
 			if (_pulsesize > _pulseMaxSize) then
 			{
@@ -64,6 +66,4 @@ _pulsesize = 0.01;
 	
 			sleep _pulseSpeed;
 		};
-
-sleep (call gps_sleep_time);
 };
