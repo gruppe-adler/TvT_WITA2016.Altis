@@ -66,5 +66,4 @@ _pulsesize = 0.01;
 		};
 
 sleep (call gps_sleep_time);
-_inner_marker setMarkerPos (getPos _this);
 };
