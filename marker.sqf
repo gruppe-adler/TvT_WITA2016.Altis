@@ -46,27 +46,25 @@ while {alive _this} do {
 _markerPos = (getPos _this) call randomize_pos;
 _inner_marker setMarkerPos _markerPos;
 _helper_marker setMarkerPos _markerPos;
-sleep (call gps_sleep_time);
-};
-
-_inner_marker setMarkerColor "ColorBlack";
-_inner_marker setMarkerPos (getPos _this);
-
-pulsespeed = 0.02;
-
+_pulsespeed = 0.02;
+_pulsesize = 0.01;
 	while {true} do
-	{
-		if (_pulsesize > _pulseMaxSize) then
 		{
-			_pulsesize = 0.01;
-			_modifier = 0.3;
-			sleep _pulseDelayBetween;
+			if (_pulsesize > _pulseMaxSize) then
+			{
+				_pulsesize = 0.01;
+				_modifier = 0.3;
+				sleep _pulseDelayBetween;
+			};
+	
+			_pulsesize = _pulsesize + _modifier;
+			_modifier = _modifier + 0.1;
+			_inner_marker setMarkerAlphaLocal 1 - (_pulsesize/_pulseMaxSize);
+			_inner_marker setMarkerSizeLocal [_pulsesize, _pulsesize];
+	
+			sleep _pulseSpeed;
 		};
 
-		_pulsesize = _pulsesize + _modifier;
-		_modifier = _modifier + 0.1;
-		"_inner_marker" setMarkerAlphaLocal 1 - (_pulsesize/_pulseMaxSize);
-		"_inner_marker" setMarkerSizeLocal [_pulsesize, _pulsesize];
-
-		sleep _pulseSpeed;
-	};
+sleep (call gps_sleep_time);
+_inner_marker setMarkerPos (getPos _this);
+};
