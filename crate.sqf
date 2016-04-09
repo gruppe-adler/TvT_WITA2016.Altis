@@ -84,6 +84,7 @@ _backpacksLoot = [
 	"B_FieldPack_khk",
 	"B_Kitbag_rgr",
 	"B_Kitbag_cbr",
+	"rhs_rpg_empty",
 	"B_TacticalPack_blk",
 	"B_TacticalPack_rgr",
 	"B_TacticalPack_oli",
@@ -212,7 +213,7 @@ _selectedAccessory = _weaponAccessoryLoot call BIS_fnc_selectRandom;
 _selectedSight = _sightsLoot call BIS_fnc_selectRandom;
 
 
-_magazineList = []; 
+_magazineList = [];
 //Suchen des richtigen Magazins
 _weapon = _selectedWeapon;
 _magazines = getArray (configFile / "CfgWeapons" / _weapon / "magazines");
@@ -222,7 +223,7 @@ _magazineList = _magazineList + _magazines;
 _selectedMag = _magazineList call BIS_fnc_selectRandom;
 
 //Kiste wird gecleared
-clearWeaponCargoGlobal (_this select 0); 
+clearWeaponCargoGlobal (_this select 0);
 clearMagazineCargoGlobal (_this select 0);
 clearItemCargoGlobal (_this select 0);
 clearBackpackCargoGlobal (_this select 0);
@@ -270,7 +271,7 @@ dann kiste füllen
 (mit (_this select 0) greifst du in der SQF die übergebene kiste auf)
 13:31
 so vom konzept, hab jetzt keine zeit alles runterzuschreiben
-*/ 
+*/
 
 
 /*

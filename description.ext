@@ -28,18 +28,12 @@ class CfgDebriefing
 		subtitle = "The agent was eliminated";
 		description = "The Special Forces successfully located the rogue agent and eliminated him.";
 	};
-	
-	class End2
-	{
-		title = "Agent wins";
-		subtitle = "The agent escaped";
-		description = "The agent named Orange managed to escape the independent army.";
-	};
+
 };
 
 class Params
 {
-  class CIVILIAN_TRAFFIC 
+  class CIVILIAN_TRAFFIC
   {
     title = "Civilian Traffic";
     values[] = {0, 1};

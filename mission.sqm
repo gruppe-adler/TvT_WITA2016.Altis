@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=568;
+		nextID=575;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11753.071,82.225967,18404.141};
-		dir[]={-0.039606832,-0.36949375,-0.92840379};
-		up[]={-0.015748912,0.92923009,-0.36916304};
-		aside[]={-0.99910319,1.4668331e-008,0.042624615};
+		pos[]={11757.603,68.371429,18338.455};
+		dir[]={-0.41979447,-0.25303817,-0.87165773};
+		up[]={-0.10979878,0.96745741,-0.22798574};
+		aside[]={-0.90098268,2.658926e-007,0.43391609};
 	};
 };
 binarizationWanted=0;
@@ -71,8 +71,8 @@ addons[]=
 	"ace_sitting",
 	"ace_medical",
 	"ace_medical_menu",
-	"A3_Characters_F_OPFOR",
-	"A3_Air_F_Heli_Light_02"
+	"rhs_c_troops",
+	"rhs_c_a2port_air"
 };
 randomSeed=13739118;
 class ScenarioData
@@ -5217,7 +5217,7 @@ class Mission
 			{
 				text="Heli  Spawn";
 				condition="true";
-				onActivation="hint ""Heli""; crashheli setPos (getPos officer vectorAdd [20,20,0]); ground = createVehicle [""CraterLong"", getPos crashheli, [], 0, ""CAN_COLLIDE""];";
+				onActivation="hint ""Heli""; crashheli setpos [getPos player select 0, getPos player select 1 + 20, 0]; ground = createVehicle [""CraterLong"", getPos crashheli, [], 0, ""CAN_COLLIDE""];";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -8666,32 +8666,31 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11750.539,54.604012,18376.352};
+						position[]={11750.468,54.611603,18376.279};
 						angles[]={6.2698507,0,6.1637526};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
-						name="crashheliD";
 					};
-					id=566;
-					type="O_helipilot_F";
+					id=573;
+					type="rhs_pilot_transport_heli";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11750.539,54.604012,18376.352};
+						position[]={11750.468,54.611603,18376.279};
 						angles[]={6.2698507,0,6.1637526};
 					};
 					side="East";
 					class Attributes
 					{
 					};
-					id=567;
-					type="O_helipilot_F";
+					id=574;
+					type="rhs_pilot_transport_heli";
 				};
 			};
 			class Attributes
@@ -8709,8 +8708,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=566;
-						item1=565;
+						item0=573;
+						item1=572;
 						class CustomData
 						{
 							role=1;
@@ -8719,8 +8718,8 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=567;
-						item1=565;
+						item0=574;
+						item1=572;
 						class CustomData
 						{
 							role=2;
@@ -8735,7 +8734,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11750.726,56.751698,18376.09};
+				position[]={11750.806,57.420074,18375.986};
 				angles[]={6.2698507,0,6.1637526};
 			};
 			side="East";
@@ -8745,12 +8744,10 @@ class Mission
 				health=0;
 				ammo=0;
 				fuel=0;
-				init="this setdamage 1;";
 				name="crashheli";
-				textures="black";
 			};
-			id=565;
-			type="O_Heli_Light_02_unarmed_F";
+			id=572;
+			type="RHS_Mi8mt_Cargo_vv";
 			class CustomAttributes
 			{
 				class Attribute0

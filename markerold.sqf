@@ -14,12 +14,7 @@ _inner_marker setMarkerShape "ELLIPSE";
 _inner_marker setMarkerSize [trackingPrecision, trackingPrecision];
 _inner_marker setMarkerBrush "Border";
 
-_helper_marker = createMarker ["agentmarker2", _markerPos];
-_helper_marker setMarkerType "mil_unknown";
-_helper_marker setMarkerColor "ColorRed";
-_helper_marker setMarkerShape "ELLIPSE";
-_helper_marker setMarkerSize [500, 500];
-_helper_marker setMarkerBrush "Border";
+
 
 gps_sleep_time = {
 gpsSleepTimeMin + floor(random(gpsSleepTimeMax - gpsSleepTimeMin))
@@ -45,9 +40,27 @@ _randomizedPos
 while {alive _this} do {
 _markerPos = (getPos _this) call randomize_pos;
 _inner_marker setMarkerPos _markerPos;
-_helper_marker setMarkerPos _markerPos;
-sleep (call gps_sleep_time);
-};
+_pulsespeed = 0.02;
+_pulsesize = 0.01;
+_pulseMaxSize = 400;
+_modifier = 0.3;
+_pulseDelayBetween = 1;
+_sleepTime = call gps_sleep_time;
+_currentTime = time;
+	while {time - _currentTime  < _sleepTime} do
+		{
+			if (_pulsesize > _pulseMaxSize) then
+			{
+				_pulsesize = 0.01;
+				_modifier = 0.3;
+				sleep _pulseDelayBetween;
+			};
 
-_inner_marker setMarkerColor "ColorBlack";
-_inner_marker setMarkerPos (getPos _this);
+			_pulsesize = _pulsesize + _modifier;
+			_modifier = _modifier + 0.1;
+			_inner_marker setMarkerAlphaLocal 1 - (_pulsesize/_pulseMaxSize);
+			_inner_marker setMarkerSizeLocal [_pulsesize, _pulsesize];
+
+			sleep _pulseSpeed;
+		};
+};
