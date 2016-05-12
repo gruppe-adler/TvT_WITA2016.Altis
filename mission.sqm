@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=636;
+		nextID=639;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11760.021,87.23304,18285.523};
-		dir[]={-0.56086415,-0.35742837,0.74679422};
-		up[]={-0.21465142,0.93393594,0.28580976};
-		aside[]={0.79961687,-3.0745286e-007,0.60053313};
+		pos[]={11664.252,98.816643,18383.797};
+		dir[]={-0.89759487,-0.4399395,0.028330017};
+		up[]={-0.43972966,0.89802289,0.013878741};
+		aside[]={0.031548478,-1.1323573e-007,0.99951696};
 	};
 };
 binarizationWanted=0;
@@ -131,7 +131,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=296;
+		items=293;
 		class Item0
 		{
 			dataType="Object";
@@ -4396,7 +4396,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={25385.049,42.321064,22149.537};
-			name="";
+			name="supply_1";
 			type="mil_unknown";
 			colorName="ColorUNKNOWN";
 			id=393;
@@ -9177,25 +9177,6 @@ class Mission
 		};
 		class Item289
 		{
-			dataType="Marker";
-			position[]={23230.408,16.226318,21814.438};
-			name="";
-			type="mil_unknown";
-			colorName="ColorUNKNOWN";
-			id=616;
-			atlOffset=-18.208649;
-		};
-		class Item290
-		{
-			dataType="Marker";
-			position[]={14625.254,15.740176,17012.389};
-			name="";
-			type="mil_unknown";
-			colorName="ColorUNKNOWN";
-			id=617;
-		};
-		class Item291
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -9238,7 +9219,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item292
+		class Item290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9282,29 +9263,25 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item293
+		class Item291
 		{
 			dataType="Marker";
-			position[]={23390.432,33.647034,21896.094};
-			name="marker_32";
-			type="mil_destroy";
-			id=633;
+			position[]={23189.781,29.81311,21776.012};
+			name="supply_2";
+			type="mil_unknown";
+			colorName="ColorUNKNOWN";
+			id=637;
+			atlOffset=-1.34062;
 		};
-		class Item294
+		class Item292
 		{
 			dataType="Marker";
-			position[]={23337.809,29.04336,21938.877};
-			name="marker_33";
-			type="mil_flag";
-			id=634;
-		};
-		class Item295
-		{
-			dataType="Marker";
-			position[]={23394.281,43.306396,21730.523};
-			name="marker_34";
-			type="mil_objective";
-			id=635;
+			position[]={14626.259,14.405884,17012.371};
+			name="supply_3";
+			type="mil_unknown";
+			colorName="ColorUNKNOWN";
+			id=638;
+			atlOffset=-1.3425789;
 		};
 	};
 	class Connections
