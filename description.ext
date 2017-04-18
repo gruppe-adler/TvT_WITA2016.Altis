@@ -2,6 +2,7 @@
 
 #include "cfgParams.hpp"
 #include "cfgCrates.hpp"
+#include "cfgIslands.hpp"
 #include "loadouts\loadouts.hpp"
 
 OnLoadMission = "One Agent vs. one Team";
@@ -19,6 +20,7 @@ enableDebugConsole = 1;
 #include "ASORVS\menu.hpp"
 class CfgFunctions
 {
+	#include "functions\cfgFunctions.hpp"
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "ASORVS\cfgfunctions.hpp"
 };
