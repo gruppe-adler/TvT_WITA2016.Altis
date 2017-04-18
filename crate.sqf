@@ -35,12 +35,7 @@ _weaponsLoot = [
 	"rhs_weap_m16a4_carryhandle_M203",
 	"rhs_weap_M590_5RD",
 	"rhs_weap_M590_8RD",
-
-	"SMA_ACR",
-	"SMA_ACRblk",
-	"SMA_ACRREM",
-	"SMA_ACRREMblk",
-
+	
 
 	"hgun_P07_snds_F",
 	"hgun_Rook40_F",
