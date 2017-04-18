@@ -20,7 +20,7 @@ class ASORVS
 		class resetClone {scope = 1;};
 		class rotateClone {scope = 1;};
 		class rotateCloneStart {scope = 1;};
-		class rotateCloneStop {scope = 1;};			
+		class rotateCloneStop {scope = 1;};
 		class selectionChanged {scope = 1;};
 		class SpawnVehicle {scope=1;};
 		class UpdateCombo {scope=1;};

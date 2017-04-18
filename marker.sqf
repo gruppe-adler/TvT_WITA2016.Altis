@@ -22,31 +22,31 @@ _helper_marker setMarkerSize [500, 500];
 _helper_marker setMarkerBrush "Border";
 
 gps_sleep_time = {
-gpsSleepTimeMin + floor(random(gpsSleepTimeMax - gpsSleepTimeMin))
+    gpsSleepTimeMin + floor(random(gpsSleepTimeMax - gpsSleepTimeMin))
 };
 
 randomize_coord = {
-_this + random(trackingPrecision * 2) - trackingPrecision
+    _this + random(trackingPrecision * 2) - trackingPrecision
 };
 
 randomize_pos =
 {
-private ["_randomizedPos", "_trueX", "_trueY"];
-_trueX = _this select 0;
-_trueY = _this select 1;
-_randomizedPos = [
-_trueX call randomize_coord,
-_trueY call randomize_coord,
-_this select 2
-];
-_randomizedPos
+    private ["_randomizedPos", "_trueX", "_trueY"];
+    _trueX = _this select 0;
+    _trueY = _this select 1;
+    _randomizedPos = [
+        _trueX call randomize_coord,
+        _trueY call randomize_coord,
+        _this select 2
+    ];
+    _randomizedPos
 };
 
 while {alive _this} do {
-_markerPos = (getPos _this) call randomize_pos;
-_inner_marker setMarkerPos _markerPos;
-_helper_marker setMarkerPos _markerPos;
-sleep (call gps_sleep_time);
+    _markerPos = (getPos _this) call randomize_pos;
+    _inner_marker setMarkerPos _markerPos;
+    _helper_marker setMarkerPos _markerPos;
+    sleep (call gps_sleep_time);
 };
 
 _inner_marker setMarkerColor "ColorBlack";

@@ -28,7 +28,6 @@ class CfgDebriefing
 		subtitle = "The agent was eliminated";
 		description = "The Special Forces successfully located the rogue agent and eliminated him.";
 	};
-
 };
 
 class Params
