@@ -1,3 +1,6 @@
+#include "cfgParams.hpp"
+#include "cfgCrates.hpp"
+
 OnLoadMission = "One Agent vs. one Team";
 author="XiviD";  //appears as author in overview and loading screen
 overviewText="An enemy agent is somewhere on the Island. Hunt him down and kill him."; //appears in overview and loading screen
@@ -28,15 +31,4 @@ class CfgDebriefing
 		subtitle = "The agent was eliminated";
 		description = "The Special Forces successfully located the rogue agent and eliminated him.";
 	};
-};
-
-class Params
-{
-  class CIVILIAN_TRAFFIC
-  {
-    title = "Civilian Traffic";
-    values[] = {0, 1};
-    texts[] =  {"False", "True"};
-    default = 0;
-  };
 };
