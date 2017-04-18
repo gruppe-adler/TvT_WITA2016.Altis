@@ -51,7 +51,6 @@ addons[]=
 	"A3_Signs_F",
 	"CUP_A2_EditorObjects",
 	"A3_Characters_F",
-	"Unlocked_Uniforms",
 	"rhs_c_weapons",
 	"A3_Weapons_F",
 	"ace_optics",
@@ -95,7 +94,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=55;
+		items=54;
 		class Item0
 		{
 			className="A3_Boat_F_Gamma";
@@ -227,8 +226,10 @@ class AddonsMetaData
 		};
 		class Item20
 		{
-			className="Unlocked_Uniforms";
-			name="Unlocked_Uniforms";
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item21
 		{
@@ -453,13 +454,6 @@ class AddonsMetaData
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item54
-		{
-			className="A3_Supplies_F_Heli";
-			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};

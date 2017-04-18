@@ -69,8 +69,6 @@ _itemsLoot = [
 ];
 
 _backpacksLoot = [
-	"ARC_Common_Backpack_compact_ATACS_LE",
-	"ARC_Common_Kitbag_compact_Black",
 	"B_AssaultPack_cbr",
 	"B_AssaultPack_dgtl",
 	"B_AssaultPack_rgr",
