@@ -1,5 +1,8 @@
+#define MODULES_DIRECTORY node_modules
+
 #include "cfgParams.hpp"
 #include "cfgCrates.hpp"
+#include "loadouts\loadouts.hpp"
 
 OnLoadMission = "One Agent vs. one Team";
 author="XiviD";  //appears as author in overview and loading screen
@@ -16,9 +19,9 @@ enableDebugConsole = 1;
 #include "ASORVS\menu.hpp"
 class CfgFunctions
 {
+	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "ASORVS\cfgfunctions.hpp"
 };
-
 
 
 

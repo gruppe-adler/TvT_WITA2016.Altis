@@ -1,0 +1,17 @@
+{
+    "name": "tvt-wita2016",
+    "description": "Where is the agent?",
+    "version": "0.1.0",
+    "contributors": [
+        {
+            "name": "XiviD"
+        },
+        {
+            "name": "McDiod"
+        }
+    ],
+
+    "dependencies": {
+            "grad-loadout": "4.x"
+    }
+}
