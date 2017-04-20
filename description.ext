@@ -3,6 +3,7 @@
 #include "cfgParams.hpp"
 #include "cfgCrates.hpp"
 #include "cfgIslands.hpp"
+#include "cfgMission.hpp"
 #include "loadouts\loadouts.hpp"
 
 OnLoadMission = "One Agent vs. one Team";
@@ -15,6 +16,7 @@ respawn=3;
 respawnDelay = 15;
 disabledAI = 0;
 enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
 
 
 #include "ASORVS\menu.hpp"
