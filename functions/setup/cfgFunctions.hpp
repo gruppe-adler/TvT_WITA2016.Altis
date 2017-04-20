@@ -1,5 +1,6 @@
 class wita_setup {
     class setup {
+        class blufor {};
         class createCrashHeli {};
         class createCustomLocations {};
         class createStartVehicle {};

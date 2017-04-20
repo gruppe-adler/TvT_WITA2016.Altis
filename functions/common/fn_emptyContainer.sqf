@@ -4,6 +4,8 @@
 *     0:    container (object)
 */
 
+#include "component.hpp"
+
 params ["_container"];
 
 clearWeaponCargoGlobal _container;

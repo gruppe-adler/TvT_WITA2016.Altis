@@ -32,7 +32,7 @@ sleep 1;
 _meldung1 = "<t color='#d18d1f' size = '3' >" + name WITA_AGENT + "</t>";
 _meldung2 = "<t color='#d18d1f' size = '3' > was killed! </t>";
 //_meldung3 = "<t color='#d18d1f' size = '3' >" + str _hours + ":" + str _min + ":" + str _sec + "</t>";
-_meldung3 = format["<t color='#d18d1f' size = '2' > TIME ACHIEVED: %1</t>", [publictime/(60*60)+.0001,"HH:MM:SS"] call BIS_fnc_timetostring];
+_meldung3 = format["<t color='#d18d1f' size = '2' > TIME ACHIEVED: %1</t>", [CBA_missionTime/(60*60)+.0001,"HH:MM:SS"] call BIS_fnc_timetostring];
 
 
 //_meldung3 = "<t color='#d18d1f' size = '3' >" + str serverTime + "</t>";

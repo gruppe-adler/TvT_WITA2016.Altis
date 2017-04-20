@@ -9,13 +9,35 @@ class cfgMission {
     };
 
     //Wie weit entfernt von der ausgewählten Location kann der Agent spawnen? Mindestabstand, Maximalabstand.
-    locationDistance[] = {0,300};
+    locationDistance[] = {50,500};
 
     //Wie weit entfernt von der Agenten-Startposition spawnt der gecrashte Heli? Mindestabstand, Maximalabstand.
     heliDistance[] = {30,100};
 
+    //Wie weit entfernt vom Agenten spawnt Blufor? (nah, normal, weit) wird über Missionparameter ausgewählt.
+    bluforSpawnDistances[] = {
+        1000,
+        2000,
+        3000
+    };
+
+    //Wie stark variiert der Blufor Spawnabstand?
+    bluforSpawnDistanceVariance = 350;
+
+    //Radius um Blufors Startposition, der zur Basis gehört
+    bluforBaseAreaSize = 150;
+
     //Auf welchen Wert wird der Treibstoff gesetzt, wenn ein Independent Spieler einen Helikopter bemannt?
     heliFuelFixValue = 0.03;
+
+    //Wie groß ist die Ungenauigkeit der Agentenmarker?
+    agentMarkerVariance = 100;
+
+    //Wie oft werden die Agentenmarker angezeigt?
+    agentMarkerInterval = 60;
+
+    //Wie lange sind Agentenmarker sichtbar?
+    agentMarkerFadeout = 120;
 
     //Startfahrzeuge für Independent. Auswahl zufällig. Eines spawnt in der Nähe der Startposition.
     indepStartVehicles[] = {
