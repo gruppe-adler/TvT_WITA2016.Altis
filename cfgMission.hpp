@@ -28,6 +28,11 @@ class cfgMission {
         "I_Quadbike_01_F"
     };
 
+    cacheAmountFactor = 1;
+    cacheMinDist = 2000;
+    cacheMarkerVarianceIndep = 50;
+    cacheMarkerVarianceBlufor = 300;
+
     class civVehicles {
 
         carLocationAmountFactor = 0.3;

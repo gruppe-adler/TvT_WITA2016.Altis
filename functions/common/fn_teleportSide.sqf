@@ -7,6 +7,7 @@
         params ["_unit","_searchPos","_side",["_randomCountdown",0]];
         _unit allowDamage false;
         _pos = ([_searchPos,[0,15]] call wita_common_fnc_findRandomPos);
+        if (_pos isEqualTo [0,0,0]) then {_pos = _searchPos};
         _unit setPos _pos;
 
         [{_this allowDamage true},_unit,2] call CBA_fnc_waitAndExecute;

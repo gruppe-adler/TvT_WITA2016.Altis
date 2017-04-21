@@ -33,7 +33,7 @@ private _markerFadeoutBase = [(missionConfigFile >> "cfgMission"), "agentMarkerF
     if (CBA_missionTime - _lastRun < _currentInterval) exitWith {};
     _agent setVariable ["wita_mission_lastAgentMarkerTime", CBA_missionTime];
 
-    _markerPos = [getPos _agent,[0,_currentVariance]] call wita_common_fnc_findRandomPos;
+    _markerPos = [getPos _agent,[0,_currentVariance],[0,360],""] call wita_common_fnc_findRandomPos;
 
     _centerMarker = createMarker [format ["wita_agentmarker_%1_center_%2",[name _agent] call BIS_fnc_filterString,CBA_missionTime * 1000],_markerPos];
     _centerMarker setMarkerShape "ICON";

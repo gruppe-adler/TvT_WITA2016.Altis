@@ -10,7 +10,10 @@ private _baseAreaSize = [missionConfigFile >> "cfgMission","bluforBaseAreaSize",
 _spawnDistance = _spawnDistance + (random (2*_spawnVariance)) - _spawnVariance;
 INFO_1("BLUFOR will spawn in %1m distance.",_spawnDistance);
 
-private _startPosition = [_indepPos,[_spawnDistance,_spawnDistance]] call wita_common_fnc_findRandomPos;
+private _startPosition = [0,0,0];
+while {_startPosition isEqualTo [0,0,0]} do {
+    _startPosition = [_indepPos,[_spawnDistance,_spawnDistance]] call wita_common_fnc_findRandomPos;
+};
 
 "respawn_west" setMarkerPos _startPosition;
 private _teleportNumber = {

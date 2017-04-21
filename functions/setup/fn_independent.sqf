@@ -7,7 +7,10 @@ INFO_1("%1 selected as start location for independent.",text _startLocation);
 
 private _heli = objNull;
 for [{_i=0}, {_i<100}, {_i=_i+1}] do {
-    _startPosition = [locationPosition _startLocation,[missionConfigFile >> "cfgMission", "locationDistance",[0,100]] call BIS_fnc_returnConfigEntry] call wita_common_fnc_findRandomPos;
+    _startPosition = [0,0,0];
+    while {_startPosition isEqualTo [0,0,0]} do {
+        _startPosition = [locationPosition _startLocation,[missionConfigFile >> "cfgMission", "locationDistance",[0,100]] call BIS_fnc_returnConfigEntry] call wita_common_fnc_findRandomPos;
+    };
     _heli = [_startPosition] call wita_setup_fnc_createCrashHeli;
     if (!isNull _heli) exitWith {};
 };

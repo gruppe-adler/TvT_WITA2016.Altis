@@ -3,7 +3,7 @@
 params ["_agentPos"];
 
 private _heliPosition = [_agentPos,[missionConfigFile >> "cfgMission", "heliDistance",[20,100]] call BIS_fnc_returnConfigEntry] call wita_common_fnc_findRandomPos;
-if (_agentPos distance _heliPosition < 5) exitWith {objNull};
+if (_heliPosition isEqualTo [0,0,0]) exitWith {objNull};
 
 private _heli = "RHS_Mi8mt_Cargo_vv" createVehicle [0,0,0];
 _heli enableDynamicSimulation false;

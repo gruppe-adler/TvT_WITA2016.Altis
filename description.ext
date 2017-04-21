@@ -1,7 +1,9 @@
 #define MODULES_DIRECTORY node_modules
 
 #include "cfgParams.hpp"
-#include "cfgCrates.hpp"
+#include "cfgCacheContents.hpp"
+#include "cfgCacheStories.hpp"
+#include "cfgCaches.hpp"
 #include "cfgIslands.hpp"
 #include "cfgMission.hpp"
 #include "loadouts\loadouts.hpp"

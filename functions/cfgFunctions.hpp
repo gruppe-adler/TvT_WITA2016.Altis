@@ -1,3 +1,4 @@
+#include "caches\cfgFunctions.hpp"
 #include "civs\cfgFunctions.hpp"
 #include "common\cfgFunctions.hpp"
 #include "init\cfgFunctions.hpp"
