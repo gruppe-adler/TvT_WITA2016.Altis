@@ -6,6 +6,7 @@ class wita_common {
         class findBuildings {};
         class findRandomPos {};
         class isAgent {};
+        class nearestCoast {};
         class teleport {};
         class teleportSide {};
     };

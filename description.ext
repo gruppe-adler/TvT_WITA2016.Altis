@@ -7,7 +7,7 @@
 #include "loadouts\loadouts.hpp"
 
 OnLoadMission = "One Agent vs. one Team";
-author="XiviD";  //appears as author in overview and loading screen
+author="XiviD & McDiod";  //appears as author in overview and loading screen
 overviewText="An enemy agent is somewhere on the Island. Hunt him down and kill him."; //appears in overview and loading screen
 onLoadName="Where is the Agent?"; //mission name for loading screen only
 overviewPicture="pic\WITA.jpg"; //mission picture for loading screen only

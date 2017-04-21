@@ -1,5 +1,7 @@
 #include "component.hpp"
 
+private _startTime = diag_tickTime;
+
 private _fnc_createMarker = {
     params ["_markerPos","_markerID"];
 
@@ -39,3 +41,5 @@ private _thesePositions = [];
 
     false
 } count _allAirportsPositions;
+
+DEBUGMSG_2("helicopter spawn completed in %1s (%2 helicopters).",diag_tickTime-_startTime,count _thesePositions);

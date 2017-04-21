@@ -1,5 +1,7 @@
 #include "component.hpp"
 
+private _startTime = diag_tickTime;
+
 private _searchRadius = 15000;
 private _worldCenter = [worldSize / 2,worldSize / 2];
 private _other = nearestLocations [_worldCenter, ["NameLocal"], _searchRadius];
@@ -22,3 +24,4 @@ private _capitals = nearestLocations [_worldCenter, ["NameCityCapital"], _search
 } forEach [_other,_villages,_cities,_capitals];
 
 INFO_1("Created %1 vehicles in locations.",count wita_civs_locationVehiclePositions);
+DEBUGMSG_2("car spawn completed in %1s (%2 cars).",diag_tickTime-_startTime,count wita_civs_locationVehiclePositions);

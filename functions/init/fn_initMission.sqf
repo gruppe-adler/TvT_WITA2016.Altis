@@ -7,6 +7,7 @@
         [] call wita_setup_fnc_createCustomLocations;
         [] spawn wita_civs_fnc_cars;
         [] spawn wita_civs_fnc_helicopters;
+        [] spawn wita_civs_fnc_boats;
         _indepPos = [] call wita_setup_fnc_independent;
         [_indepPos] call wita_setup_fnc_blufor;
     };

@@ -64,5 +64,10 @@ class cfgMission {
         heliTypes[] = {
             "C_Heli_Light_01_civil_F"
         };
+
+        boatCoastAmountFactor = 1;
+        boatTypes[] = {
+            "C_Boat_Civil_01_F"
+        };
     };
 };

@@ -21,7 +21,8 @@ class agent {
 		compass = "ItemCompass";
         addItemsToUniform[] = {
             LIST_5("ACE_morphine"),
-            LIST_10("ACE_fieldDressing")
+            LIST_10("ACE_fieldDressing"),
+			LIST_2("ACE_key_lockpick")
         };
         addItemsToVest[] = {};
         addItemsToBackpack[] = {};
