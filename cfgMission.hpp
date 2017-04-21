@@ -52,4 +52,12 @@ class cfgMission {
     indepStartVehicles[] = {
         "I_Quadbike_01_F"
     };
+
+    class civCars {
+        locationAmountFactor = 1;
+
+        types[] = {
+            "C_Offroad_01_F"
+        };
+    };
 };
