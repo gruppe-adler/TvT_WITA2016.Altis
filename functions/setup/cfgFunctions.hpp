@@ -9,6 +9,7 @@ class wita_setup {
         class filterLocations {};
         class independent {};
         class selectStartLocation {};
+        class setMoney {};
         class startGame {};
         class teleportSide {};
     };

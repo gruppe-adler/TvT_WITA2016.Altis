@@ -19,4 +19,11 @@ class Params {
         texts[] = {"close","normal","far"};
         default = 1;
     };
+
+    class BLUFOR_MONEY {
+        title = "Blufor Money";
+        values[] = {0,1,2};
+        texts[] = {"less","normal","more"};
+        default = 1;
+    };
 };
