@@ -7,13 +7,17 @@ private _spawnDistance = ([missionConfigFile >> "cfgMission","bluforSpawnDistanc
 private _spawnVariance = [missionConfigFile >> "cfgMission","bluforSpawnDistanceVariance",0] call BIS_fnc_returnConfigEntry;
 private _baseAreaSize = [missionConfigFile >> "cfgMission","bluforBaseAreaSize",150] call BIS_fnc_returnConfigEntry;
 
-_spawnDistance = _spawnDistance + (random (2*_spawnVariance)) - _spawnVariance;
 INFO_1("BLUFOR will spawn in %1m distance.",_spawnDistance);
 
 private _startPosition = [0,0,0];
 while {_startPosition isEqualTo [0,0,0]} do {
-    _startPosition = [_indepPos,[_spawnDistance,_spawnDistance]] call wita_common_fnc_findRandomPos;
+    _startPosition = [_indepPos,[_spawnDistance-_spawnVariance,_spawnDistance+_spawnVariance],[0,360],"CUP_A2_wf_uav_terminal_west"] call wita_common_fnc_findRandomPos;
+    _startPosition = [_startPosition, 0, 50, 10, 0, 0.065, 0, [], [0,0,0]] call BIS_fnc_findSafePos;
 };
+
+private _baseTerminal = "CUP_A2_wf_uav_terminal_west" createVehicle [0,0,0];
+_baseTerminal setDir random 360;
+_baseTerminal setPos _startPosition;
 
 "respawn_west" setMarkerPos _startPosition;
 

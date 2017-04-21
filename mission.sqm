@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={2535.8457,63.249588,10166.004};
-		dir[]={0.85495806,-0.35456657,-0.37861663};
-		up[]={0.32420632,0.93502772,-0.14357413};
-		aside[]={-0.40492496,-9.5111318e-008,-0.91436571};
+		pos[]={14299.694,19.82852,13008.036};
+		dir[]={-0.76649576,-0.42688686,0.47986189};
+		up[]={-0.36183247,0.90430295,0.2265234};
+		aside[]={0.53064108,1.1047814e-007,0.84760749};
 	};
 };
 binarizationWanted=0;
@@ -5117,7 +5117,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="BLUFOR Base";
-			state=2;
 			class Entities
 			{
 				items=14;
