@@ -30,14 +30,23 @@ class cfgMission {
     //Auf welchen Wert wird der Treibstoff gesetzt, wenn ein Independent Spieler einen Helikopter bemannt?
     heliFuelFixValue = 0.03;
 
-    //Wie groß ist die Ungenauigkeit der Agentenmarker?
-    agentMarkerVariance = 100;
-
     //Wie oft werden die Agentenmarker angezeigt?
     agentMarkerInterval = 60;
 
+    //Wie groß ist die Ungenauigkeit der Agentenmarker?
+    agentMarkerVariance = 100;
+
     //Wie lange sind Agentenmarker sichtbar?
     agentMarkerFadeout = 120;
+
+    //Wie oft werden Agentenmarker angezeigt, wenn Agenten in der BLUFOR Basisarea sind?
+    agentMarkerIntervalBase = 1.1;
+
+    //Wie groß ist die Ungenauigkeit, wenn Agenten in der BLUFOR Basisarea sind?
+    agentMarkerVarianceBase = 10;
+
+    //Wie lange sind Agentenmarker in der BLUFOR Basisarea sichtbar?
+    agentMarkerFadeoutBase = 10;
 
     //Startfahrzeuge für Independent. Auswahl zufällig. Eines spawnt in der Nähe der Startposition.
     indepStartVehicles[] = {
