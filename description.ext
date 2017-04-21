@@ -6,13 +6,17 @@
 #include "cfgCaches.hpp"
 #include "cfgIslands.hpp"
 #include "cfgMission.hpp"
+#include "buyables\cfgBuyables.hpp"
 #include "loadouts\loadouts.hpp"
 
-OnLoadMission = "One Agent vs. one Team";
-author="XiviD & McDiod";  //appears as author in overview and loading screen
-overviewText="An enemy agent is somewhere on the Island. Hunt him down and kill him."; //appears in overview and loading screen
-onLoadName="Where is the Agent?"; //mission name for loading screen only
-overviewPicture="pic\WITA.jpg"; //mission picture for loading screen only
+#include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
+#include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
+
+onLoadMission = "";
+author="XiviD & McDiod";
+overviewText="Enemy agents are somewhere on the Island. Hunt them down.";
+onLoadName="Where is the Agent?";
+overviewPicture="pic\WITA.jpg";
 onLoadMissionTime = True;
 respawn=3;
 respawnDelay = 15;
@@ -21,23 +25,23 @@ enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
 
 
-#include "ASORVS\menu.hpp"
 class CfgFunctions
 {
 	#include "functions\cfgFunctions.hpp"
+	#include "buyables\cfgFunctions.hpp"
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
-	#include "ASORVS\cfgfunctions.hpp"
+	#include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
+    #include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 };
 
 
-
-debriefing =1;
-class CfgDebriefing
-{
-	class End1
-	{
-		title = "Special Forces win";
-		subtitle = "The agent was eliminated";
-		description = "The Special Forces successfully located the rogue agent and eliminated him.";
-	};
+class CfgGradMoneymenu {
+    canGiveDefault = 0;
+    canTransferToSidesDefault[] = {};
+    canTakeFromDeadDefault = 0;
+    canSendDirectlyDefault = 0;
+    canTakeFromSurrenderedDefault = 1;
+    startMoney = 0;
+    startBankBalance = 0;
+    atmObjects[] = {};
 };

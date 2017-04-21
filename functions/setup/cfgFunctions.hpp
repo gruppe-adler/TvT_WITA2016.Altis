@@ -2,6 +2,7 @@ class wita_setup {
     class setup {
         class addKilledEH {};
         class blufor {};
+        class bluforBuyAction {};
         class createCrashHeli {};
         class createCustomLocations {};
         class createStartVehicle {};

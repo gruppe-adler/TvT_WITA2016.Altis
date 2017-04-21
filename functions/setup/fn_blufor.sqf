@@ -10,14 +10,15 @@ private _baseAreaSize = [missionConfigFile >> "cfgMission","bluforBaseAreaSize",
 INFO_1("BLUFOR will spawn in %1m distance.",_spawnDistance);
 
 private _startPosition = [0,0,0];
-while {_startPosition isEqualTo [0,0,0]} do {
+while {_startPosition isEqualTo [0,0,0] || isOnRoad _startPosition} do {
     _startPosition = [_indepPos,[_spawnDistance-_spawnVariance,_spawnDistance+_spawnVariance],[0,360],"CUP_A2_wf_uav_terminal_west"] call wita_common_fnc_findRandomPos;
-    _startPosition = [_startPosition, 0, 50, 10, 0, 0.065, 0, [], [0,0,0]] call BIS_fnc_findSafePos;
+    _startPosition = [_startPosition, 0, 50, 10, 0, 0.065, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 };
 
 private _baseTerminal = "CUP_A2_wf_uav_terminal_west" createVehicle [0,0,0];
 _baseTerminal setDir random 360;
 _baseTerminal setPos _startPosition;
+[_baseTerminal] remoteExec ["wita_setup_fnc_bluforBuyAction",0,true];
 
 "respawn_west" setMarkerPos _startPosition;
 

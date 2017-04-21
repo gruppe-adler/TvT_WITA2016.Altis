@@ -5,6 +5,7 @@ class wita_common {
         class fadeMarker {};
         class findBuildings {};
         class findRandomPos {};
+        class getIslandCfgValue {};
         class getWeaponMagazines {};
         class isAgent {};
         class nearestCoast {};

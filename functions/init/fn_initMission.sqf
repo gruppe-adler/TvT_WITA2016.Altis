@@ -1,6 +1,7 @@
 #include "component.hpp"
 
 [] call wita_init_fnc_setMissionParams;
+[] call wita_init_fnc_setIslandParams;
 
 [{!isNull player || isDedicated},{
     if (isServer) then {
