@@ -56,6 +56,11 @@ class cfgMission {
     class civVehicles {
 
         carLocationAmountFactor = 0.3;
+        carLocationMinDist = 30;
+
+        carRoadAmountFactor = 0.03;
+        carRoadMinDist = 300;
+
         carTypes[] = {
             "C_Offroad_01_F"
         };

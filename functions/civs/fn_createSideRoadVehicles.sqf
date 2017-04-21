@@ -1,6 +1,6 @@
 #include "component.hpp"
 
-params ["_locationPosition","_locationRadius"];
+params ["_locationPosition","_locationRadius","_amountFactor","_houseFactor","_minDistance"];
 
 //LOCAL FUNCTIONS ==============================================================
 private _fnc_createMarker = {
@@ -19,7 +19,7 @@ private _fnc_nearbyVehiclePositions = {
     params ["_pos"];
 
     _nearbyVehiclePositions = [];
-    {if (_pos distance2D _x < 30) then {_nearbyVehiclePositions pushBack _x}} forEach wita_civs_locationVehiclePositions;
+    {if (_pos distance2D _x < _minDistance) then {_nearbyVehiclePositions pushBack _x}} forEach wita_civs_vehiclePositions;
     _nearbyVehiclePositions
 };
 
@@ -30,13 +30,13 @@ private _fnc_isSafe = {
 
 
 //MAIN =========================================================================
-if (isNil "wita_civs_locationVehiclePositions") then {wita_civs_locationVehiclePositions = []};
+if (isNil "wita_civs_vehiclePositions") then {wita_civs_vehiclePositions = []};
 
 private _thesePositions = [];
-private _locationAmountFactor = [missionConfigFile >> "cfgMission" >> "civVehicles", "carLocationAmountFactor", 1] call BIS_fnc_returnConfigEntry;
 private _availableTypes = [missionConfigFile >> "cfgMission" >> "civVehicles", "carTypes",["C_Offroad_01_F"]] call BIS_fnc_returnConfigEntry;
 private _roads = _locationPosition nearRoads _locationRadius;
-private _vehiclesToCreate = 2 max (round (random ((count _roads) * 0.07 * _locationAmountFactor)));
+private _vehiclesToCreate = (round ((count _roads) * 0.07 * _amountFactor));
+_vehiclesToCreate = round (2 max (_vehiclesToCreate + ((random (_vehiclesToCreate * 0.4)) - _vehiclesToCreate * 0.2)));
 
 while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
     private ["_vehPos","_canCreate","_chosenDirection","_offRoadFound"];
@@ -60,7 +60,7 @@ while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
                 if (!isOnRoad _testPos) exitWith {_offRoadFound = true};
             };
 
-            _enoughHouses = (count ([_vehPos,20] call wita_common_fnc_findBuildings)) * 30 > random 100;
+            _enoughHouses = if (_houseFactor < 0) then {true} else {(count ([_vehPos,20] call wita_common_fnc_findBuildings)) * _houseFactor > random 100};
 
             _canCreate = switch (true) do {
                 case (!_offRoadFound): {"ONROAD"};
@@ -76,11 +76,11 @@ while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
         } forEach [_startDirection,-_startDirection];
 
         if (_canCreate == "CANCREATE") then {
-            _marker = if (WITA_DEBUGMODE) then {[_vehPos,count wita_civs_locationVehiclePositions] call _fnc_createMarker} else {""};
+            _marker = if (WITA_DEBUGMODE) then {[_vehPos,count wita_civs_vehiclePositions] call _fnc_createMarker} else {""};
 
             _type = selectRandom _availableTypes;
             _thesePositions pushBack _vehPos;
-            wita_civs_locationVehiclePositions pushBack _vehPos;
+            wita_civs_vehiclePositions pushBack _vehPos;
             _veh = createVehicle [_type,[0,0,0],[],0,"CAN_COLLIDE"];
             [{!isNull (_this select 0)}, {
                 params ["_veh","_roadDir","_chosenDirection","_vehPos","_marker"];

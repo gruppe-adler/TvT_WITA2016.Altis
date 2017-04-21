@@ -2,7 +2,7 @@ class wita_civs {
     class civs {
         class boats {};
         class cars {};
-        class createLocationVehicles {};
+        class createSideRoadVehicles {};
         class deleteIfDamaged {};
         class helicopters {};
     };
