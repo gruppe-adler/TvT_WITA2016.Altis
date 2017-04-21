@@ -6,7 +6,8 @@ private _heliPosition = [_agentPos,[missionConfigFile >> "cfgMission", "heliDist
 if (_agentPos distance _heliPosition < 5) exitWith {objNull};
 
 private _heli = "RHS_Mi8mt_Cargo_vv" createVehicle [0,0,0];
-_heli setPos [_heliPosition select 0, _heliPosition select 1, 0];
+_heli enableDynamicSimulation false;
+_heli setPos [_heliPosition select 0, _heliPosition select 1, 5];
 _heli setVehicleAmmo 0;
 _heli setVariable ["ace_cookoff_enable", false, true];
 _heli spawn {
@@ -14,8 +15,7 @@ _heli spawn {
     _this setDamage [1,false];
     sleep 2;
     [_this] call wita_common_fnc_createSmoke;
+    _ground = createVehicle ["CraterLong", getPos _this, [], 0, "CAN_COLLIDE"];
 };
-
-private _ground = createVehicle ["CraterLong", getPos _heli, [], 0, "CAN_COLLIDE"];
 
 _heli

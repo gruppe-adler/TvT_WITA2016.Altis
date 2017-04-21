@@ -3,18 +3,19 @@
 params ["_locationPosition","_locationRadius"];
 
 //LOCAL FUNCTIONS ==============================================================
-_fnc_createMarker = {
+private _fnc_createMarker = {
     params ["_markerPos","_markerID"];
 
     _markerName = format ["wita_civs_sideRoadVehicleMarker_%1",_markerID];
     _marker = createMarker [_markerName, _markerPos];
     _marker setMarkerShape "ICON";
-    _marker setMarkerType "mil_triangle";
+    _marker setMarkerType "hd_dot";
     _marker setMarkerColor "COLORCIV";
+
+    _marker
 };
 
-
-_fnc_nearbyVehiclePositions = {
+private _fnc_nearbyVehiclePositions = {
     params ["_pos"];
 
     _nearbyVehiclePositions = [];
@@ -22,7 +23,7 @@ _fnc_nearbyVehiclePositions = {
     _nearbyVehiclePositions
 };
 
-_fnc_isSafe = {
+private _fnc_isSafe = {
     params ["_pos"];
     !(([_pos, 0, 0, 2, 0, 0.6, 0,"",[[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos) isEqualTo [0,0,0])
 };
@@ -32,8 +33,8 @@ _fnc_isSafe = {
 if (isNil "wita_civs_locationVehiclePositions") then {wita_civs_locationVehiclePositions = []};
 
 private _thesePositions = [];
-private _locationAmountFactor = [missionConfigFile >> "cfgMission" >> "civCars", "locationAmountFactor", 1] call BIS_fnc_returnConfigEntry;
-private _availableTypes = [missionConfigFile >> "cfgMission" >> "civCars", "types",["C_Offroad_01_F"]] call BIS_fnc_returnConfigEntry;
+private _locationAmountFactor = [missionConfigFile >> "cfgMission" >> "civVehicles", "carLocationAmountFactor", 1] call BIS_fnc_returnConfigEntry;
+private _availableTypes = [missionConfigFile >> "cfgMission" >> "civVehicles", "carTypes",["C_Offroad_01_F"]] call BIS_fnc_returnConfigEntry;
 private _roads = _locationPosition nearRoads _locationRadius;
 private _vehiclesToCreate = 2 max (round (random ((count _roads) * 0.07 * _locationAmountFactor)));
 
@@ -75,22 +76,20 @@ while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
         } forEach [_startDirection,-_startDirection];
 
         if (_canCreate == "CANCREATE") then {
-            if (WITA_DEBUGMODE) then {
-                [_vehPos,count wita_civs_locationVehiclePositions] call _fnc_createMarker;
-            };
+            _marker = if (WITA_DEBUGMODE) then {[_vehPos,count wita_civs_locationVehiclePositions] call _fnc_createMarker} else {""};
 
             _type = selectRandom _availableTypes;
             _thesePositions pushBack _vehPos;
             wita_civs_locationVehiclePositions pushBack _vehPos;
             _veh = createVehicle [_type,[0,0,0],[],0,"CAN_COLLIDE"];
             [{!isNull (_this select 0)}, {
-                params ["_veh","_roadDir","_chosenDirection","_vehPos"];
+                params ["_veh","_roadDir","_chosenDirection","_vehPos","_marker"];
                 _veh setDir _roadDir + (90 + 90*_chosenDirection);
                 _veh setPos _vehPos;
                 _veh setVelocity [0,0,1];
                 _veh lock 2;
-                [_veh] call wita_civs_fnc_deleteIfDamaged;
-            }, [_veh,_roadDir,_chosenDirection,_vehPos]] call CBA_fnc_waitUntilAndExecute;
+                [_veh,_marker] call wita_civs_fnc_deleteIfDamaged;
+            }, [_veh,_roadDir,_chosenDirection,_vehPos,_marker]] call CBA_fnc_waitUntilAndExecute;
         };
     };
 };

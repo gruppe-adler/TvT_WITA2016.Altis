@@ -53,11 +53,16 @@ class cfgMission {
         "I_Quadbike_01_F"
     };
 
-    class civCars {
-        locationAmountFactor = 1;
+    class civVehicles {
 
-        types[] = {
+        carLocationAmountFactor = 0.3;
+        carTypes[] = {
             "C_Offroad_01_F"
+        };
+
+        heliAirportAmountFactor = 1;
+        heliTypes[] = {
+            "C_Heli_Light_01_civil_F"
         };
     };
 };
