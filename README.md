@@ -12,7 +12,8 @@ locationTypeWeight          | How likely is it, that INDEP will start near this 
 bluforSpawnDistanceVariance | How much does BLUFOR spawn distance to INDEP vary?
 bluforBaseAreaSize          | Radius around BLUFOR start position that is considered part of their base.
 bluforSpawnDistances        | How far away from INDEP does BLUFOR start? Values correspond with (close,normal,far) mission parameters.
-bluforMoneyFactor           | Factor for amount of BLUFOR money. Higher means more.
+bluforMoneyStartFactor      | Factor for amount of BLUFOR starting money. Higher means more.
+bluforMoneyGainFactor       | Factor for amount money BLUFOR gains over time. Higher means more.
 agentMarkerInterval         | How often will agents be tracked?
 agentMarkerVariance         | How inaccurate will agent markers be?
 agentMarkerFadeout          | How long will agent markers be visible?
