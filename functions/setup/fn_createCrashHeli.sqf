@@ -12,6 +12,8 @@ _heli setVariable ["ace_cookoff_enable", false, true];
 _heli spawn {
     sleep 1;
     _this setDamage [1,false];
+    sleep 2;
+    [_this] call wita_common_fnc_createSmoke;
 };
 
 private _ground = createVehicle ["CraterLong", getPos _heli, [], 0, "CAN_COLLIDE"];

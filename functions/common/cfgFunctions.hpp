@@ -1,5 +1,6 @@
 class wita_common {
     class common {
+        class createSmoke {};
         class emptyContainer {};
         class fadeMarker {};
         class findRandomPos {};
