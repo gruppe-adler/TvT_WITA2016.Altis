@@ -1,5 +1,6 @@
 class wita_setup {
     class setup {
+        class addKilledEH {};
         class blufor {};
         class createCrashHeli {};
         class createCustomLocations {};
@@ -7,5 +8,7 @@ class wita_setup {
         class filterLocations {};
         class independent {};
         class selectStartLocation {};
+        class startGame {};
+        class teleportSide {};
     };
 };

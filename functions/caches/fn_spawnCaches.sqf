@@ -1,9 +1,12 @@
 #include "component.hpp"
 
+params ["_indepStartPos"];
+
 private _startTime = diag_tickTime;
 
 private _cacheAmount = round (([missionConfigFile >> "cfgMission","cacheAmountFactor",1] call BIS_fnc_returnConfigEntry) * worldSize/1000);
 private _cacheMinDist = [missionConfigFile >> "cfgMission","cacheMinDist",1] call BIS_fnc_returnConfigEntry;
+private _cacheIndepStartDist = [missionConfigFile >> "cfgMission","cacheIndepStartDist",1] call BIS_fnc_returnConfigEntry;
 
 private _allCacheTypes = "true" configClasses (missionConfigFile >> "cfgCaches");
 private _allCacheTypesWeighted = [];
@@ -17,7 +20,7 @@ private _searchPos = [worldSize/2,worldSize/2,0];
 private _searchRadius = worldSize * 1.5;
 private _loopCount = 0;
 private _allCachePositions = [];
-while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 100}} do {
+while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 50}} do {
     _cacheType = _allCacheTypesWeighted call BIS_fnc_selectRandomWeighted;
     _cacheStories = [_cacheType,"cacheStories",[""]] call BIS_fnc_returnConfigEntry;
     _cacheStory = (missionConfigFile >> "cfgCacheStories" >> selectRandom _cacheStories);
@@ -35,7 +38,7 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 1
     };
 
     _cachePos = _cachePos isFlatEmpty [_cacheSize,-1,-1,1,0,_onCoast];
-    if (_roadCheck && {!(_cachePos isEqualTo [0,0,0])} && {count _cachePos > 0} && {({_cachePos distance _x < _cacheMinDist} count _allCachePositions) == 0}) then {
+    if (_roadCheck && {!(_cachePos isEqualTo [0,0,0])} && {count _cachePos > 0} && {({_cachePos distance _x < _cacheMinDist} count _allCachePositions) == 0} && {_cachePos distance _indepStartPos > _cacheIndepStartDist}) then {
         [ASLtoATL _cachePos,_cacheType,_cacheStory,_cacheContainer] call wita_caches_fnc_spawnCrate;
         _allCachePositions pushBack _cachePos;
         [_cachePos,count _allCachePositions] call wita_caches_fnc_cacheMarker;

@@ -21,6 +21,7 @@ agentMarkerFadeoutBase      | How long will their markers be visible while insid
 indepStartVehicles          | Classnames of all starting vehicles for INDEP. Picked at random.
 cacheAmountFactor           | Factor for amount of caches. Higher means more.
 cacheMinDist                | Minimum distance that caches have to have to each other.
+cacheIndepStartDist         | Minimum distance to INDEP start position that caches have to have.
 cacheMarkerVarianceIndep    | How inaccurate will cache markers be for INDEP?
 cacheMarkerVarianceBlufor   | How inaccurate will cache markers be for BLUFOR?
 

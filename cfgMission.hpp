@@ -29,8 +29,9 @@ class cfgMission {
     };
 
     cacheAmountFactor = 1;
-    cacheMinDist = 2000;
-    cacheMarkerVarianceIndep = 50;
+    cacheMinDist = 3000;
+    cacheIndepStartDist = 1500;
+    cacheMarkerVarianceIndep = 0;
     cacheMarkerVarianceBlufor = 300;
 
     class civVehicles {

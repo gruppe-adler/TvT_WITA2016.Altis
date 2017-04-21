@@ -18,8 +18,9 @@ params [
 ];
 
 
-if (_smokePos isEqualType objNull) then {_smokePos = getPos _smokePos};
+if (_smokePos isEqualType objNull) then {_smokePos = getPosASL _smokePos};
 private _emitter = "#particlesource" createVehicleLocal _smokePos;
+_emitter setPosASL _smokePos;
 
 _emitter setParticleParams [
     ["\A3\data_f\ParticleEffects\Universal\Universal_02",8,0,40,1],

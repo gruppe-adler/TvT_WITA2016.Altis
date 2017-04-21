@@ -4,14 +4,19 @@
 
 [{!isNull player || isDedicated},{
     if (isServer) then {
-        [] call wita_setup_fnc_createCustomLocations;
-        [] spawn wita_civs_fnc_cars;
-        [] spawn wita_civs_fnc_helicopters;
-        [] spawn wita_civs_fnc_boats;
-        [] spawn wita_caches_fnc_spawnCaches;
         _indepPos = [] call wita_setup_fnc_independent;
-        [_indepPos] call wita_setup_fnc_blufor;
+        _bluforPos = [_indepPos] call wita_setup_fnc_blufor;
+        [] call wita_setup_fnc_createCustomLocations;
+
+        _carsHandle = [] spawn wita_civs_fnc_cars;
+        _heliHandle = [] spawn wita_civs_fnc_helicopters;
+        _boatHandle = [] spawn wita_civs_fnc_boats;
+        _cacheHandle = [_indepPos] spawn wita_caches_fnc_spawnCaches;
+
+        [{{scriptDone _x} count (_this select 0) == count (_this select 0)}, {[_this select 1,_this select 2] call wita_setup_fnc_startGame}, [[_carsHandle,_heliHandle,_boatHandle,_cacheHandle],_indepPos,_bluforPos]] call CBA_fnc_waitUntilAndExecute;
     };
 
-
+    if (hasInterface) then {
+        [{missionNamespace getVariable ["WITA_GAMESTARTED",false] && !isNull player}, {[] call wita_setup_fnc_addKilledEH}, []] call CBA_fnc_waitUntilAndExecute;
+    };
 }, []] call CBA_fnc_waitUntilAndExecute;

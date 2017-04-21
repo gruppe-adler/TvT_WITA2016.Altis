@@ -19,12 +19,6 @@ if (isNull _heli) then {ERROR_1("No suitable location found for helicopter.")};
 private _startVeh = [_startPosition] call wita_setup_fnc_createStartVehicle;
 
 "respawn_guerrila" setMarkerPos _startPosition;
-private _teleportNumber = {
-    [_x,_startPosition,INDEPENDENT,3] remoteExec ["wita_common_fnc_teleportSide",_x,true];
-    if ([_x] call wita_common_fnc_isAgent) then {[_x] call wita_mission_fnc_agentMarker};
-    false
-} count playableUnits;
-INFO("INDEPENDENT units teleported to start position.");
 
 if (WITA_DEBUGMODE) then {
     ["wita_indep_crashHeli",getPos _heli,"ICON",[1,1],"PERSIST","TYPE:","mil_triangle","COLOR:","COLORGUER"] call CBA_fnc_createMarker;

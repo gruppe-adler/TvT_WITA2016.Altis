@@ -16,11 +16,6 @@ while {_startPosition isEqualTo [0,0,0]} do {
 };
 
 "respawn_west" setMarkerPos _startPosition;
-private _teleportNumber = {
-    [_x,_startPosition,WEST,3] remoteExec ["wita_common_fnc_teleportSide",_x,true];
-    false
-} count playableUnits;
-INFO("BLUFOR units teleported to start position.");
 
 //create area
 WITA_BLUFORBASEAREA = createTrigger ["EmptyDetector", _startPosition, false];
