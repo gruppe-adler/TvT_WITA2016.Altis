@@ -16,9 +16,9 @@ private _capitals = nearestLocations [_worldCenter, ["NameCityCapital"], _search
             case (3): {300};
         };
 
-        [locationPosition _x,_locationRadius] call wita_civs_fnc_createSideRoadVehicles;
+        [locationPosition _x,_locationRadius] call wita_civs_fnc_createLocationVehicles;
         false
     } count _x;
 } forEach [_other,_villages,_cities,_capitals];
 
-INFO_1("Created %1 vehicles in locations.",count wita_civs_sideRoadVehiclePositions);
+INFO_1("Created %1 vehicles in locations.",count wita_civs_locationVehiclePositions);

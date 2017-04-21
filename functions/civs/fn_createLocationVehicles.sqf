@@ -18,7 +18,7 @@ _fnc_nearbyVehiclePositions = {
     params ["_pos"];
 
     _nearbyVehiclePositions = [];
-    {if (_pos distance2D _x < 30) then {_nearbyVehiclePositions pushBack _x}} forEach wita_civs_sideRoadVehiclePositions;
+    {if (_pos distance2D _x < 30) then {_nearbyVehiclePositions pushBack _x}} forEach wita_civs_locationVehiclePositions;
     _nearbyVehiclePositions
 };
 
@@ -29,13 +29,13 @@ _fnc_isSafe = {
 
 
 //MAIN =========================================================================
-if (isNil "wita_civs_sideRoadVehiclePositions") then {wita_civs_sideRoadVehiclePositions = []};
+if (isNil "wita_civs_locationVehiclePositions") then {wita_civs_locationVehiclePositions = []};
 
 private _thesePositions = [];
 private _locationAmountFactor = [missionConfigFile >> "cfgMission" >> "civCars", "locationAmountFactor", 1] call BIS_fnc_returnConfigEntry;
 private _availableTypes = [missionConfigFile >> "cfgMission" >> "civCars", "types",["C_Offroad_01_F"]] call BIS_fnc_returnConfigEntry;
 private _roads = _locationPosition nearRoads _locationRadius;
-private _vehiclesToCreate = (round (random ((count _roads) * 0.07 * _locationAmountFactor)));
+private _vehiclesToCreate = 2 max (round (random ((count _roads) * 0.07 * _locationAmountFactor)));
 
 while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
     private ["_vehPos","_canCreate","_chosenDirection","_offRoadFound"];
@@ -76,12 +76,12 @@ while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
 
         if (_canCreate == "CANCREATE") then {
             if (WITA_DEBUGMODE) then {
-                [_vehPos,count wita_civs_sideRoadVehiclePositions] call _fnc_createMarker;
+                [_vehPos,count wita_civs_locationVehiclePositions] call _fnc_createMarker;
             };
 
             _type = selectRandom _availableTypes;
             _thesePositions pushBack _vehPos;
-            wita_civs_sideRoadVehiclePositions pushBack _vehPos;
+            wita_civs_locationVehiclePositions pushBack _vehPos;
             _veh = createVehicle [_type,[0,0,0],[],0,"CAN_COLLIDE"];
             [{!isNull (_this select 0)}, {
                 params ["_veh","_roadDir","_chosenDirection","_vehPos"];
