@@ -20,7 +20,7 @@ _baseTerminal setDir random 360;
 _baseTerminal setPos _startPosition;
 [_baseTerminal] remoteExec ["wita_setup_fnc_bluforBuyAction",0,true];
 
-"respawn_west" setMarkerPos _startPosition;
+"respawn_west" setMarkerPos (_startPosition vectorAdd [10,0,0]);
 
 //create area
 WITA_BLUFORBASEAREA = createTrigger ["EmptyDetector", _startPosition, false];

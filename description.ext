@@ -17,13 +17,16 @@ author="XiviD & McDiod";
 overviewText="Enemy agents are somewhere on the Island. Hunt them down.";
 onLoadName="Where is the Agent?";
 overviewPicture="pic\WITA.jpg";
+
 onLoadMissionTime = True;
-respawn=3;
-respawnDelay = 15;
+respawn = 3;
+respawnDelay = 9999;
+respawnTemplates[] = {"Base"};
+respawnOnStart = -1;
+respawnDialog = 0;
 disabledAI = 0;
 enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
-
 
 class CfgFunctions
 {

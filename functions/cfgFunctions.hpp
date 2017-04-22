@@ -5,3 +5,4 @@
 #include "init\cfgFunctions.hpp"
 #include "mission\cfgFunctions.hpp"
 #include "setup\cfgFunctions.hpp"
+#include "waverespawn\cfgFunctions.hpp"

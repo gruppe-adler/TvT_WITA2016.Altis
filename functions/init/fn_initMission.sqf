@@ -2,8 +2,14 @@
 
 [] call wita_init_fnc_setMissionParams;
 [] call wita_init_fnc_setIslandParams;
+[] call wita_waverespawn_fnc_setWaveSize;
+
+wita_missionParam_WAVERESPAWNTIMEBLU = "WAVERESPAWNTIMEBLU" call BIS_fnc_getParamValue;
+wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
 
 [{!isNull player || isDedicated},{
+    [] call wita_waverespawn_fnc_initWaveRespawn;
+
     if (isServer) then {
         _indepPos = [] call wita_setup_fnc_independent;
         _bluforPos = [_indepPos] call wita_setup_fnc_blufor;

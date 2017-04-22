@@ -9,6 +9,7 @@ class wita_common {
         class getWeaponMagazines {};
         class isAgent {};
         class nearestCoast {};
+        class startSpectator {};
         class teleport {};
         class teleportSide {};
     };
