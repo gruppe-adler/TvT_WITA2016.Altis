@@ -14,6 +14,7 @@
     "dependencies": {
             "grad-loadout": "4.x",
             "grad-listbuymenu": ">=0.0.3",
-            "grad-moneymenu": ">=0.0.1"
+            "grad-moneymenu": ">=0.0.1",
+            "grad-scoreboard": ">=0.0.1"
     }
 }
