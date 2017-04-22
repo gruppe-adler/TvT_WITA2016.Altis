@@ -27,5 +27,8 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
 
     if (hasInterface) then {
         [{missionNamespace getVariable ["WITA_GAMESTARTED",false] && !isNull player}, {[] call wita_setup_fnc_addKilledEH}, []] call CBA_fnc_waitUntilAndExecute;
+        if (didJIP && {[] call wita_common_fnc_isAgent} && {[] call wita_common_fnc_isAgent}) then {
+            [player] remoteExec ["wita_mission_fnc_agentMarker",2,false];
+        };
     };
 }, []] call CBA_fnc_waitUntilAndExecute;

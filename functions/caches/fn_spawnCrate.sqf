@@ -10,8 +10,6 @@ _cache setPos _cachePos;
 private _cacheStoryScript = [_cacheStory,"script",""] call BIS_fnc_returnConfigEntry;
 if (_cacheStoryScript != "") then {[_cachePos,random 360] execVM _cacheStoryScript};
 
-diag_log [_cacheStoryScript,_cacheStory];
-
 {
     _availableItems = [missionConfigFile >> "cfgCacheContents",_x,[""]] call BIS_fnc_returnConfigEntry;
     _magAmount = [_cacheType,"magazinesPerRifle",0] call BIS_fnc_returnConfigEntry;
