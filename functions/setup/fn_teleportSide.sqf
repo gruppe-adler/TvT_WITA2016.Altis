@@ -3,7 +3,7 @@
 params ["_targetPos","_side"];
 
 private _teleportNumber = {
-    [_x,_targetPos,_side,3] remoteExec ["wita_common_fnc_teleportSide",_x,true];
+    [_x,_targetPos,_side,3] remoteExec ["wita_common_fnc_teleportSide",_x,false];
     false
 } count playableUnits;
 

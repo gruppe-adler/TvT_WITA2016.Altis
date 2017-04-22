@@ -27,6 +27,7 @@ class CfgIslands {
 			"Drimea",
 			"dump",
 			"Edoris",
+			"Eginio",
 			"Faros",
 			"Fournos",
 			"Gori",
