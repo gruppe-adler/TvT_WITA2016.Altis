@@ -36,7 +36,7 @@ class CfgFunctions
 	#include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
     #include "node_modules\grad-moneymenu\cfgFunctions.hpp"
-	#include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
+	#include "node_modules\grad-scoreboard\cfgFunctions.hpp"
 };
 
 

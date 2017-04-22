@@ -6,6 +6,13 @@ class Params {
         default = 1;
     };
 
+    class RANKED_MODE {
+        title = "Track Statistics";
+        values[] = {0,1};
+        texts[] = {"false","true"};
+        default = 1;
+    };
+
     class CIVILIAN_TRAFFIC {
         title = "Civilian Traffic";
         values[] = {0, 1};

@@ -1,5 +1,9 @@
 class cfgMission {
 
+    scoreboardDurationCurrent = 7;
+    scoreboardDurationAlltime = 10;
+    scoreboardSaveTag = "XIV_WITA_SCOREBOARD";
+
     locationDistance[] = {50,500};
     heliDistance[] = {30,100};
     locationTypeWeight[] = {
