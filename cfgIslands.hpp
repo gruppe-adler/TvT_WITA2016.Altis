@@ -10,7 +10,6 @@ class CfgIslands {
 		locationBlacklist[] = {
 			"AAC airfield",
 			"Agios Georgios",
-			"Agios Georgios",
 			"Agios Kosmas",
 			"Agios Panagiotis",
 			"Aktinarki",
