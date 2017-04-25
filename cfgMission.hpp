@@ -4,29 +4,29 @@ class cfgMission {
     scoreboardDurationAlltime = 10;
     scoreboardSaveTag = "XIV_WITA_SCOREBOARD";
 
-    locationDistance[] = {50,500};
-    heliDistance[] = {30,100};
+    locationDistance[] = {50,100};
+    heliDistance[] = {20,80};
     locationTypeWeight[] = {
-        "VILLAGE", 0.4,
-        "CITY", 0.3,
+        "VILLAGE", 0.5,
+        "CITY", 0.2,
         "CAPITAL", 0.1,
         "OTHER", 0.2
     };
 
     bluforSpawnDistanceVariance = 350;
-    bluforBaseAreaSize = 150;
+    bluforBaseAreaSize = 200;
     bluforMoneyStartFactor = 1;
     bluforMoneyGainFactor = 1;
     bluforSpawnDistances[] = {
-        1000,
         2000,
-        3000
+        3000,
+        4000
     };
 
-    timeBeforeFirstTrack = 60;
-    agentMarkerInterval = 60;
+    timeBeforeFirstTrack = 30;
+    agentMarkerInterval = 120;
     agentMarkerVariance = 100;
-    agentMarkerFadeout = 120;
+    agentMarkerFadeout = 180;
     agentMarkerIntervalBase = 1.1;
     agentMarkerVarianceBase = 10;
     agentMarkerFadeoutBase = 10;
@@ -37,7 +37,7 @@ class cfgMission {
 
     cacheAmountFactor = 1;
     cacheMinDist = 3000;
-    cacheIndepStartDist = 1500;
+    cacheIndepStartDist = 2000;
     cacheMarkerVarianceIndep = 0;
     cacheMarkerVarianceBlufor = 300;
 
