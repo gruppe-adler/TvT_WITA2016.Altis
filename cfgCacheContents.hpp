@@ -32,7 +32,6 @@ class cfgCacheContents {
     	"SMG_01_F",
     	"SMG_02_F",
     	"hgun_PDW2000_F",
-
     	"rhs_weap_m4",
     	"rhs_weap_m4a1_carryhandle",
     	"rhs_weap_m4a1_carryhandle_grip2",
@@ -41,6 +40,8 @@ class cfgCacheContents {
     	"rhs_weap_m16a4_carryhandle_M203",
     	"rhs_weap_M590_5RD",
     	"rhs_weap_M590_8RD",
+        "rhs_weap_ak74m_desert_npz",
+        "rhs_weap_ak74m_camo_npz",
     	"rhs_weap_ak104_npz"
     };
 
@@ -48,8 +49,6 @@ class cfgCacheContents {
         "rhs_weap_ak74m",
     	"rhs_weap_ak74m_camo",
     	"rhs_weap_ak105",
-    	"rhs_weap_ak74m_desert_npz",
-    	"rhs_weap_ak74m_camo_npz",
     	"rhs_weap_akms",
     	"rhs_weap_ak104",
     };
@@ -60,14 +59,21 @@ class cfgCacheContents {
     	"hgun_Rook40_snds_F",
     	"hgun_ACPC2_F",
     	"hgun_ACPC2_snds_F",
-
     	"rhsusf_weap_m1911a1",
     	"rhsusf_weap_glock17g4",
     	"rhsusf_weap_m9"
     };
 
-    launchers[] = {
+    launchersWest[] = {
+        "rhs_weap_M136_hedp",
+        "rhs_weap_M136",
+        "Rhs_weap_stinger_Launcher"
     };
+
+    launchersEast[] = {
+        "rhs_weap_igla",
+        "rhs_weap_strela"
+    }
 
     accessoriesWest[] = {
         "muzzle_snds_M",

@@ -23,7 +23,7 @@ class cfgCaches {
         backpacks = 0;
 
         cacheContainers[] = {
-            "Box_NATO_WpsSpecial_F"
+            "Box_NATO_WpsSpecial_F" //Welche Box sichtbar am Boden liegt
         };
 
         cacheStories[] = {
