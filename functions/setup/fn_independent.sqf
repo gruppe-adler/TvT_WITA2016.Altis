@@ -16,14 +16,21 @@ for [{_i=0}, {_i<100}, {_i=_i+1}] do {
 };
 if (isNull _heli) then {ERROR_1("No suitable location found for helicopter.")};
 
-private _startVeh = [_startPosition] call wita_setup_fnc_createStartVehicle;
+{
+    if ([_x] call wita_common_fnc_isAgent) then {
+        private _startVeh = [_startPosition] call wita_setup_fnc_createStartVehicle;
+        if (WITA_DEBUGMODE) then {
+            ["wita_indep_startvehicle",getPos _startVeh,"ICON",[1,1],"PERSIST","TYPE:","hd_dot","COLOR:","COLORGUER"] call CBA_fnc_createMarker
+        };
+    };
+    false
+} count playableUnits;
 
 "respawn_guerrila" setMarkerPos _startPosition;
 
 if (WITA_DEBUGMODE) then {
     ["wita_indep_crashHeli",getPos _heli,"ICON",[1,1],"PERSIST","TYPE:","mil_triangle","COLOR:","COLORGUER"] call CBA_fnc_createMarker;
     ["wita_indep_startPosition",_startPosition,"ICON",[1,1],"PERSIST","TYPE:","hd_start","COLOR:","COLORGUER"] call CBA_fnc_createMarker;
-    ["wita_indep_startvehicle",getPos _startVeh,"ICON",[1,1],"PERSIST","TYPE:","hd_dot","COLOR:","COLORGUER"] call CBA_fnc_createMarker
 };
 
 _startPosition
