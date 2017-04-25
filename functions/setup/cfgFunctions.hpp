@@ -6,6 +6,7 @@ class wita_setup {
         class createCrashHeli {};
         class createCustomLocations {};
         class createStartVehicle {};
+        class createTasks {};
         class filterLocations {};
         class independent {};
         class selectStartLocation {};

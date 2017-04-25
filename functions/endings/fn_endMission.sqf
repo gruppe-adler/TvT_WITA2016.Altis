@@ -7,6 +7,9 @@ missionNamespace setVariable ["WITA_ENDINGINPROGRESS",true,true];
 
 DEBUGMSG_1("Mission ending: %1",_endingType);
 
+["wita_tasks_blufor_eliminateAgents","Succeeded",true] spawn BIS_fnc_taskSetState;
+["wita_tasks_indep_survive","Failed",true] spawn BIS_fnc_taskSetState;
+
 _this spawn {
     params ["_endingType"];
 

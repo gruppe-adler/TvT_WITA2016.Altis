@@ -6,6 +6,7 @@ params ["_indepPos","_bluforPos"];
 [_bluforPos,WEST] call wita_setup_fnc_teleportSide;
 
 [WEST] call wita_setup_fnc_setMoney;
+[] call wita_setup_fnc_createTasks;
 
 [{missionNamespace getVariable ["CBA_missionTime",0] > 10}, {[] call wita_endings_fnc_checkIndep}, []] call CBA_fnc_waitUntilAndExecute;
 [{
