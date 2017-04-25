@@ -65,14 +65,19 @@ Attribute       | Explanation
 ----------------|--------------------------------------------------
 riflesWest      | Rifles that can take western optics.
 riflesEast      | Rifles that can take eastern optics.
+snipersWest     | Sniper rifles that can take western optics.
+snipersEast     | Sniper rifles that can take eastern optics.
 handguns        | Handguns.
-launchers       | Launchers.
+launchersWest   | Western launchers.
+launchersEast   | Eastern launchers.
 accessoriesWest | Accessories that fit on western rifles.
 accessoriesEast | Accessories that fit on eastern rifles.
 sightsWest      | Non-magnifying sights that fit on western rifles.
 sightsEast      | Non-magnifying sights that fit on eastern rifles.
 scopesWest      | Magnifying scopes that fit on western rifles.
 scopesEast      | Magnifying scopes that fir on eastern rifles.
+sniperScopesWest| Sniper scopes that fit on western snipers.
+sniperScopesEast| Sniper scopes that fit on eastern snipers.
 grenades        | Grenades.
 items           | Inventory items except for medical equipment.
 medical         | Medical items.
