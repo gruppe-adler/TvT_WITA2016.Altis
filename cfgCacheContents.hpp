@@ -45,12 +45,22 @@ class cfgCacheContents {
     	"rhs_weap_ak104_npz"
     };
 
+    sniperWest[] ={
+        "rhs_weap_XM2010",
+        "rhs_weap_m40a5"
+    };
+
+
     riflesEast[] = {
         "rhs_weap_ak74m",
     	"rhs_weap_ak74m_camo",
     	"rhs_weap_ak105",
     	"rhs_weap_akms",
     	"rhs_weap_ak104",
+    };
+
+    sniperEast[] = {
+        "rhs_weap_t5000"
     };
 
     handguns[] = {
@@ -72,8 +82,12 @@ class cfgCacheContents {
 
     launchersEast[] = {
         "rhs_weap_igla",
-        "rhs_weap_strela"
-    }
+        "rhs_weap_strela",
+        "rhs_weap_rpg7",
+        "rhs_weap_rpg26",
+        "rhs_weap_rshg2",
+        "rhs_weap_m72a7"
+    };
 
     accessoriesWest[] = {
         "muzzle_snds_M",
@@ -147,17 +161,28 @@ class cfgCacheContents {
     };
 
     sightsEast[] = {
-            "rhs_acc_pkas",
-        	"rhs_acc_1p63",
-        	"rhs_acc_ekp1",
-        	"rhs_acc_1p78",
-        	"rhs_acc_1pn93_2"
+        "rhs_acc_pkas",
+    	"rhs_acc_1p63",
+     	"rhs_acc_ekp1",
+    	"rhs_acc_1p78",
+    	"rhs_acc_1pn93_2"
     };
 
     scopesWest[] = {
     };
 
     scopesEast[] = {
+    };
+
+    sniperScopesWest[]={
+        "rhs_acc_pso1m21",
+        "rhsusf_acc_LEUPOLDMK4",
+        "optic_LRPS"
+    };
+    sniperScopesEast[]={
+        "rhs_acc_pso1m21",
+        "rhsusf_acc_LEUPOLDMK4",
+        "optic_LRPS"
     };
 
     grenades[] = {
