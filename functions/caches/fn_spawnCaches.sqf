@@ -33,7 +33,7 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 5
 
     _cachePos = if (_onCoast) then {_coastSearchPos = [_searchPos,[0,_searchRadius],[0,360],"",true] call wita_common_fnc_findRandomPos; [_coastSearchPos,[0,300],[0,360],_cacheContainer,false] call wita_common_fnc_findRandomPos} else {[_searchPos,[0,_searchRadius],[0,360],_cacheContainer,false] call wita_common_fnc_findRandomPos};
     _roadCheck = if (!_onRoad) then {true} else {
-        _nearRoads = _cachePos nearRoads 100;
+        _nearRoads = _cachePos nearRoads 300;
         if (count _nearRoads > 0) then {_cachePos = getPos (selectRandom _nearRoads); true} else {false};
     };
 

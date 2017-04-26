@@ -27,7 +27,8 @@ class cfgCaches {
         };
 
         cacheStories[] = {
-            "exampleStory"
+            "hmmwvCrash1",
+            "heliCrash1"
         };
     };
 };
