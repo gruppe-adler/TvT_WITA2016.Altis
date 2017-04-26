@@ -4,6 +4,7 @@
 #include "cfgCacheContents.hpp"
 #include "cfgCacheStories.hpp"
 #include "cfgCaches.hpp"
+#include "cfgCivilians.hpp"
 #include "cfgIslands.hpp"
 #include "cfgMission.hpp"
 #include "buyables\cfgBuyables.hpp"
@@ -17,7 +18,7 @@ onLoadMission = "";
 author="XiviD & McDiod";
 overviewText="Enemy agents are somewhere on the Island. Hunt them down.";
 onLoadName="Where is the Agent?";
-overviewPicture="pic\WITA.jpg";
+loadScreen="pic\WITA.jpg";
 
 onLoadMissionTime = True;
 respawn = 3;
@@ -37,6 +38,7 @@ class CfgFunctions
 	#include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
     #include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 	#include "node_modules\grad-scoreboard\cfgFunctions.hpp"
+	#include "node_modules\grad-civs\cfgFunctions.hpp"
 };
 
 
@@ -49,4 +51,15 @@ class CfgGradMoneymenu {
     startMoney = 0;
     startBankBalance = 0;
     atmObjects[] = {};
+};
+
+
+class CfgGradCivs {
+    autoInit = 0;
+    maxCivs = 60;
+    spawnDistances[] = {1000,4500};
+    debugMode = 1;
+    exitOn = "";
+    onSpawn = "";
+    onHeldUp = "";
 };

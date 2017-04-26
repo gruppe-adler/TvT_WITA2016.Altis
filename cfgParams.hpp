@@ -13,13 +13,6 @@ class Params {
         default = 1;
     };
 
-    class CIVILIAN_TRAFFIC {
-        title = "Civilian Traffic";
-        values[] = {0, 1};
-        texts[] =  {"false", "true"};
-        default = 0;
-    };
-
     class BLUFOR_SPAWNDISTANCE {
         title = "Blufor Spawn Distance";
         values[] = {0,1,2};
