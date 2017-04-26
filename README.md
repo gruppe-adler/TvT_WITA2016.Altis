@@ -92,3 +92,31 @@ size     | Radius in m around story position that has to be empty for this to sp
 onRoad   | Does this have to be on a road?
 onCoast  | Does this have to be on the coast?
 script   | The script to execute to spawn this story. Passed parameters are center of story and direction.
+
+# Creating Cache Stories
+There is an export script available for you to create stories with. In multiplayer it will only work if you are the host.
+
+Go to the salt desert Almyra on Altis. Your player position is the center position of the cache. Use Zeus to place story objects around you. Once you are done, open the debug console and execute `[] execVM "exportStory.sqf"`. Now go to the `cacheStories` folder, create a new file and name it after your story (e.g. `myCoolStory.sqf`). Paste your clipboard into that file and save. Open `cfgCacheStories.hpp` and create a new story that uses your newly created script. For example:
+
+```sqf
+class myCoolStory {
+    size = 20;
+    onRoad = 0;
+    onCoast = 0;
+    script = "cacheStories\myCoolStory.sqf";
+};
+```
+
+Now add that story to any cache in `cfgCaches.hpp` that you want to use it for. For example:
+
+```sqf
+class myCoolCache {
+    //OTHER ATTRIBUTES OMITTED
+
+    cacheStories[] = {
+        "someOtherStory",
+        "yetAnotherStory",
+        "myCoolStory"
+    };
+};
+```
