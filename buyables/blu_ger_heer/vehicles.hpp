@@ -17,8 +17,7 @@ class Vehicles {
         stock = 10;
     };
 
-    class MH6_Flecktarn {
-        condition = "WITA_ISWOODLAND";
+  /*/       condition = "WITA_ISWOODLAND";
         displayName = "MH6 Littlebird";
         description = "Seats: 8<br/><br/>";
         price = 10000;
@@ -28,6 +27,32 @@ class Vehicles {
     class MH6_Tropentarn: MH6_Flecktarn {
         condition = "!WITA_ISWOODLAND";
     };
+/*/
+
+    class RHS_MELB_H6M {
+        displayName = "OH6 Littlebird";
+        description = "Seats: 2<br/><br/>";
+        price = 2000;
+        stock = 2;
+    };
+
+    class RHS_MELB_MH6M {
+        displayName = "MH6 Littlebird";
+        description = "Seats: 8<br/><br/>";
+        price = 2000;
+        stock = 2;
+    };
+
+
+
+
+
+
+
+
+
+
+
 
     class Box_NATO_Equip_F {
         displayName = "Assault Boat (x2)";
