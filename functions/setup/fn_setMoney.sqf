@@ -9,11 +9,11 @@ private _moneyFactorParam = switch ("DEBUG_MODE" call BIS_fnc_getParamValue) do 
     case (1): {1.0};
     case (2): {1.2};
 };
-private _money = (2000 + ((count ([] call BIS_fnc_listPlayers)) * 300)) * _moneyFactorConfig * _moneyFactorParam;
+private _money = (6000 + ((count ([] call BIS_fnc_listPlayers)) * 300)) * _moneyFactorConfig * _moneyFactorParam;
 [_account,_money] call grad_lbm_fnc_addFunds;
 
 
-private _moneyPerInterval = (count ([] call BIS_fnc_listPlayers)) * 10 * _moneyFactorConfig;
+private _moneyPerInterval = (count ([] call BIS_fnc_listPlayers)) * 15 * _moneyFactorConfig;
 [{
     params ["_args","_handle"];
     _args params ["_moneyPerInterval","_account"];
