@@ -15,14 +15,14 @@ _this spawn {
 
     _duration = [missionConfigFile >> "cfgMission","scoreboardDurationCurrent",5] call BIS_fnc_returnConfigEntry;
     _stats = [WITA_SCOREARRAY_CURRENT] call wita_endings_fnc_compileStatsForScoreboard;
-    [_duration,_stats,"AGENTS THIS GAME",false,[true,1,false]] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
+    [_duration,_stats,"AGENTS THIS GAME",false,[true,1,false],[],"",false,false,true] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
     sleep _duration;
 
     if (WITA_RANKEDMODE && !WITA_DEBUGMODE) then {
         _scoreAlltime = [WITA_SCOREARRAY_CURRENT] call wita_endings_fnc_saveStats;
-        _stats = [_scoreAlltime,["NAME","HIGHSCORE"]] call wita_endings_fnc_compileStatsForScoreboard;
+        _stats = [_scoreAlltime,["NAME","MAP","HIGHSCORE"]] call wita_endings_fnc_compileStatsForScoreboard;
         _duration = [missionConfigFile >> "cfgMission","scoreboardDurationAlltime",10] call BIS_fnc_returnConfigEntry;
-        [_duration,_stats,"AGENTS ALL TIME",true,[true,1,false]] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
+        [_duration,_stats,"AGENTS ALL TIME",true,[true,1,false],[],"",false,false,true] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
         sleep _duration;
     };
 

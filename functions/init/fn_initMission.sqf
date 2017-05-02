@@ -11,7 +11,7 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
     [] call wita_waverespawn_fnc_initWaveRespawn;
 
     if (isServer) then {
-        WITA_SCOREARRAY_CURRENT = [[],["UNKNOWN PLAYER",0]] call CBA_fnc_hashCreate;
+        WITA_SCOREARRAY_CURRENT = [[],["UNKNOWN PLAYER","UNKNOWN MAP",0]] call CBA_fnc_hashCreate;
 
         _indepPos = [] call wita_setup_fnc_independent;
         _bluforPos = [_indepPos] call wita_setup_fnc_blufor;
