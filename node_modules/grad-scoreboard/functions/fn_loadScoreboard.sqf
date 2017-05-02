@@ -48,8 +48,8 @@ _additionalTitleBackground = _display displayCtrl grad_scoreboard_MSTITLEBACKGRO
 if (_duration > 0) then {
     [_display,true] call grad_scoreboard_fnc_disableESC;
     if (_disableSimulation) then {
-        (vehicle player) enableSimulation true;
-        player enableSimulation true;
+        (vehicle player) enableSimulation false;
+        player enableSimulation false;
     };
     [{
         params ["_display","_disableSimulation"];

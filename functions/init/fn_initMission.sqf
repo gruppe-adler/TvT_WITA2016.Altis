@@ -17,6 +17,9 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
         _bluforPos = [_indepPos] call wita_setup_fnc_blufor;
         [] call wita_setup_fnc_createCustomLocations;
 
+        missionNamespace setVariable ["WITA_INDEPPOS",_indepPos,true];
+        missionNamespace setVariable ["WITA_BLUFORPOS",_bluforPos,true];
+
         _carsHandle = [] spawn wita_civs_fnc_cars;
         _heliHandle = [] spawn wita_civs_fnc_helicopters;
         _boatHandle = [] spawn wita_civs_fnc_boats;
@@ -29,7 +32,10 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
 
     if (hasInterface) then {
         [{missionNamespace getVariable ["WITA_GAMESTARTED",false] && !isNull player}, {[] call wita_setup_fnc_addKilledEH}, []] call CBA_fnc_waitUntilAndExecute;
-        if (didJIP && {[] call wita_common_fnc_isAgent} && {[] call wita_common_fnc_isAgent}) then {
+        if (didJIP && {missionNamespace getVariable ["WITA_GAMESTARTED",false]}) then {
+            if (playerSide == INDEPENDENT) then {[player,WITA_INDEPPOS] call wita_common_fnc_teleport} else {[player,WITA_BLUFORPOS] call wita_common_fnc_teleport};
+        };
+        if (didJIP && {[] call wita_common_fnc_isAgent}) then {
             [player] remoteExec ["wita_mission_fnc_agentMarker",2,false];
         };
     };
