@@ -39,7 +39,7 @@ class CfgFunctions {
 ## Usage
 If no second statistics array is provided, the additional window will be hidden. The parameter array can be generated with [GRAD Winrate Tracker](https://github.com/gruppe-adler/grad-winrateTracker) (however, if you want any other stats than games, wins, losses, winrate, winrateTracker will not work for you).
 To open the scoreboard, use  
-`[duration,main stats,main headline,rank numbers,sort,2nd stats,2nd headline,2nd rank numbers,2nd sort] call grad_scoreboard_fnc_loadScoreboard`:
+`[duration,main stats,main headline,rank numbers,sort,2nd stats,2nd headline,2nd rank numbers,2nd sort,disable simulation] call grad_scoreboard_fnc_loadScoreboard`:
 
 | Parameter                   | Explanation                                                                                                                                                    |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,6 +52,7 @@ To open the scoreboard, use
 | 2nd headline (optional)     | String - Title of additional window.                                                                                                                           |
 | 2nd rank numbers (optional) | Bool - Display rank numbers as first column in additional window?                                                                                              |
 | 2nd sort (optional)         | Bool/Array - If array: [sort additional statistics? (bool), index to sort by (number), sort ascending (bool)]. If bool, true: Sort by first index, descending. |
+| disable simulation          | Bool - Disable player simulation for the *duration*.                                                                                                           |
 
 Example:
 `[20,_allStats,"statistics of my mission",true] call grad_scoreboard_fnc_loadScoreboard`
