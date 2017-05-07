@@ -1,7 +1,7 @@
 {
     "name": "tvt-wita2016",
     "description": "Where is the agent?",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "contributors": [
         {
             "name": "XiviD"
@@ -16,6 +16,7 @@
             "grad-listbuymenu": ">=0.0.3",
             "grad-moneymenu": ">=0.0.1",
             "grad-scoreboard": ">=0.0.1",
-            "grad-civs": ">=0.0.1"
+            "grad-civs": ">=0.0.1",
+            "grad-gpstracker": ">=0.0.1"
     }
 }

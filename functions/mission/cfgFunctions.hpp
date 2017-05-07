@@ -4,5 +4,6 @@ class wita_mission {
         class agentMarker {};
         class handleAgentKilled {};
         class heliFuelFix {};
+        class showTracker {};
     };
 };

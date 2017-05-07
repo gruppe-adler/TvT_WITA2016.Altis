@@ -39,6 +39,7 @@ _agent setVariable ["wita_mission_currentAgentMarkerInterval",_markerIntervalMin
     _agent setVariable ["wita_mission_currentAgentMarkerInterval",_markerIntervalMin + (random _markerIntervalRandom)];
 
     _markerPos = [getPos _agent,[0,_currentVariance],[0,360],""] call wita_common_fnc_findRandomPos;
+    [_markerPos] remoteExec ["wita_mission_fnc_showTracker",WEST,false];
 
     _centerMarker = createMarker [format ["wita_agentmarker_%1_center_%2",[name _agent] call BIS_fnc_filterString,CBA_missionTime * 1000],_markerPos];
     _centerMarker setMarkerShape "ICON";

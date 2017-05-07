@@ -39,6 +39,7 @@ class CfgFunctions
     #include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 	#include "node_modules\grad-scoreboard\cfgFunctions.hpp"
 	#include "node_modules\grad-civs\cfgFunctions.hpp"
+	#include "node_modules\grad-gpsTracker\cfgFunctions.hpp"
 };
 
 
