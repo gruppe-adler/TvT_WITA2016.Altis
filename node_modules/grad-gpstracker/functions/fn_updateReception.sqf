@@ -2,7 +2,7 @@
 
 params ["_unit","_target","_updateInterval","_receptionCtrl","_receptionCode"];
 
-private _reception = if (isNull _target) then {0} else {
+private _reception = if (_target isEqualType objNull && {isNull _target}) then {0} else {
     [_unit,_target,_updateInterval] call _receptionCode;
 };
 

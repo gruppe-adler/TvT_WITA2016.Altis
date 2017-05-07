@@ -6,4 +6,4 @@ private _lastRunTime = missionNamespace getVariable ["wita_mission_trackerLastRu
 if (CBA_missionTime - _lastRunTime < 10) exitWith {};
 missionNamespace setVariable ["wita_mission_trackerLastRuntime",CBA_missionTime];
 
-[_pos,0.2,1,1,1,nil,7] call grad_gpsTracker_fnc_openTitle;
+[_pos,0.2,1,1,1,{100},7] call grad_gpsTracker_fnc_openTitle;
