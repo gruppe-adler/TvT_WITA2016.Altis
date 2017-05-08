@@ -75,7 +75,7 @@ The tracker will always point directly at the target, no matter the reception. I
 ### Reception
 The reception has no influence on the tracking accuracy, but at 0 reception the tracker will show "NO SIGNAL" instead of the arrow. It can be used to give the user a rough idea about his distance to the target.
 
-The `reception code` parameter will take a function that returns a number. 0 and below means no reception, 100 and above means full reception. The following parameters are passed to the function:
+The `reception code` parameter will take any function that returns a number. 0 and below means no reception, 1 and above means full reception. The following parameters are passed to the function:
 
 Parameter      | Explanation
 ---------------|---------------------------------------------
@@ -83,10 +83,10 @@ unit           | object - The unit that is using the tracker.
 target         | object or position - The current target.
 updateInterval | number - The current update interval.
 
-You can use this to create a sophisticated, nonlinear reception function. By default this function is used:
+You can use this to create a sophisticated, nonlinear reception function. By default this function is used, which gives the device a maximum range of 2000m:
 
 ```sqf
 params ["_unit","_target","_updateInterval"];
-private _reception = 1 - (_unit distance2D _target)/100;
+private _reception = 1 - (_unit distance2D _target)/2000;
 _reception
 ```
