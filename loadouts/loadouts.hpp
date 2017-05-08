@@ -9,5 +9,6 @@ class Loadouts {
         #include "agent.hpp"
         #include "ger_heer_w.hpp"
         #include "ger_heer_d.hpp"
+        #include "us_army.hpp"
     };
 };
