@@ -51,3 +51,5 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 5
 };
 
 DEBUGMSG_3("cache spawn completed in %1s (%2/%3 caches).",diag_tickTime-_startTime,count _allCachePositions,_cacheAmount);
+
+missionNamespace setVariable ["WITA_SETUP_CACHESDONE",true,true];

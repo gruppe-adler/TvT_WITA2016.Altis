@@ -33,3 +33,5 @@ private _roadMinDist = [missionConfigFile >> "cfgMission" >> "civVehicles", "car
 [[worldSize/2,worldSize/2,0],worldSize * 1.5,_roadAmountFactor,-1,_roadMinDist] call wita_civs_fnc_createSideRoadVehicles;
 
 DEBUGMSG_2("car spawn completed in %1s (%2 cars).",diag_tickTime-_startTime,count wita_civs_vehiclePositions);
+
+missionNamespace setVariable ["WITA_SETUP_CARSDONE",true,true];

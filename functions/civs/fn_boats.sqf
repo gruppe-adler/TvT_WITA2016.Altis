@@ -48,3 +48,5 @@ while {count _thesePositions < _boatsToCreate && {_loopCount < _boatsToCreate * 
 };
 
 DEBUGMSG_2("boat spawn completed in %1s (%2 boats).",diag_tickTime-_startTime,count _thesePositions);
+
+missionNamespace setVariable ["WITA_SETUP_BOATSDONE",true,true];

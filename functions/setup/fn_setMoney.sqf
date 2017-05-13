@@ -4,7 +4,7 @@ params ["_account"];
 
 private _moneyFactorConfig = [missionConfigFile >> "cfgMission","bluforMoneyStartFactor",1] call BIS_fnc_returnConfigEntry;
 private _moneyFactorGain = [missionConfigFile >> "cfgMission","bluforMoneyGainFactor",1] call BIS_fnc_returnConfigEntry;
-private _moneyFactorParam = switch ("DEBUG_MODE" call BIS_fnc_getParamValue) do {
+private _moneyFactorParam = switch ("BLUFOR_MONEY" call BIS_fnc_getParamValue) do {
     case (0): {0.8};
     case (1): {1.0};
     case (2): {1.2};

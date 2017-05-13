@@ -43,3 +43,5 @@ private _thesePositions = [];
 } count _allAirportsPositions;
 
 DEBUGMSG_2("helicopter spawn completed in %1s (%2 helicopters).",diag_tickTime-_startTime,count _thesePositions);
+
+missionNamespace setVariable ["WITA_SETUP_HELISDONE",true,true];

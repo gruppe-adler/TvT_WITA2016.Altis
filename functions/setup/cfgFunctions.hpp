@@ -13,5 +13,6 @@ class wita_setup {
         class setMoney {};
         class startGame {};
         class teleportSide {};
+        class waitScreen {};
     };
 };

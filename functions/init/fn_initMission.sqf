@@ -40,3 +40,9 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
         };
     };
 }, []] call CBA_fnc_waitUntilAndExecute;
+
+if (hasInterface) then {
+    [{!isNull (findDisplay 46)},{
+        [] call wita_setup_fnc_waitScreen;
+    }, []] call CBA_fnc_waitUntilAndExecute;
+};

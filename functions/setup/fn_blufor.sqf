@@ -30,4 +30,6 @@ WITA_BLUFORBASEAREA setTriggerArea [_baseAreaSize,_baseAreaSize,0,false];
 ["wita_blufor_startPosition",_startPosition,"ICON",[1,1],"PERSIST","TYPE:","b_hq","COLOR:","COLORWEST"] call CBA_fnc_createMarker;
 ["wita_blufor_baseArea",_startPosition,"ELLIPSE",[_baseAreaSize,_baseAreaSize],"PERSIST","BRUSH:","Border","COLOR:","COLORWEST"] call CBA_fnc_createMarker;
 
+missionNamespace setVariable ["WITA_SETUP_BLUFORDONE",true,true];
+
 _startPosition

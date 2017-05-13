@@ -33,4 +33,6 @@ if (WITA_DEBUGMODE) then {
     ["wita_indep_startPosition",_startPosition,"ICON",[1,1],"PERSIST","TYPE:","hd_start","COLOR:","COLORGUER"] call CBA_fnc_createMarker;
 };
 
+missionNamespace setVariable ["WITA_SETUP_INDEPENDENTDONE",true,true];
+
 _startPosition
