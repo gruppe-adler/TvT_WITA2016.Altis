@@ -4,5 +4,6 @@ class wita_init {
         class initMission {postInit = 1;};
         class setIslandParams {};
         class setMissionParams {};
+        class tfarSettings {preInit = 1;};
     };
 };
