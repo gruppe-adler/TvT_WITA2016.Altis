@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
@@ -1912,7 +1912,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6000;
+							value=3500;
 						};
 					};
 				};
