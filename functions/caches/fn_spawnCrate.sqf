@@ -2,6 +2,8 @@
 
 params ["_cachePos","_cacheType","_cacheStory","_cacheContainer"];
 
+_cachePos set [2,0];
+
 private _cache = _cacheContainer createVehicle [0,0,0];
 _cache setDir random 360;
 _cache setPos _cachePos;

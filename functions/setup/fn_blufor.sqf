@@ -15,6 +15,8 @@ while {_startPosition isEqualTo [0,0,0] || isOnRoad _startPosition || !([_startP
     _startPosition = [_startPosition, 0, 50, 10, 0, 0.065, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 };
 
+_startPosition set [2,0];
+
 private _baseTerminal = "CUP_A2_wf_uav_terminal_west" createVehicle [0,0,0];
 _baseTerminal setDir random 360;
 _baseTerminal setPos _startPosition;

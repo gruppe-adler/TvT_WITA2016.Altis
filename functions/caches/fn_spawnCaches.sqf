@@ -20,7 +20,7 @@ private _searchPos = [worldSize/2,worldSize/2,0];
 private _searchRadius = worldSize * 0.7;
 private _loopCount = 0;
 private _allCachePositions = [];
-while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 1000}} do {
+while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 100}} do {
     _cacheType = _allCacheTypesWeighted call BIS_fnc_selectRandomWeighted;
 
     _cacheStories = [_cacheType,"cacheStories",[""]] call BIS_fnc_returnConfigEntry;
@@ -40,7 +40,7 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 1
         if (count _nearRoads > 0) then {_cachePos = getPos (selectRandom _nearRoads); true} else {false};
     };
 
-    _cachePos = _cachePos isFlatEmpty [_cacheSize,-1,-1,1,0,_onCoast];
+    /*_cachePos = _cachePos isFlatEmpty [_cacheSize,-1,-1,1,0,_onCoast];*/
     if (
         _roadCheck &&
         {!(_cachePos isEqualTo [0,0,0])} &&

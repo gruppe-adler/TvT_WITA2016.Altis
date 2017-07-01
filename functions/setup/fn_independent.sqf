@@ -14,6 +14,9 @@ for [{_i=0}, {_i<100}, {_i=_i+1}] do {
     _heli = [_startPosition] call wita_setup_fnc_createCrashHeli;
     if (!isNull _heli) exitWith {};
 };
+
+_startPosition set [2,0];
+
 if (isNull _heli) then {ERROR_1("No suitable location found for helicopter.")};
 
 {
