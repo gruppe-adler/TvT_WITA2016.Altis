@@ -10,7 +10,7 @@ private _baseAreaSize = [missionConfigFile >> "cfgMission","bluforBaseAreaSize",
 INFO_1("BLUFOR will spawn in %1m distance.",_spawnDistance);
 
 private _startPosition = [0,0,0];
-while {_startPosition isEqualTo [0,0,0] || isOnRoad _startPosition} do {
+while {_startPosition isEqualTo [0,0,0] || isOnRoad _startPosition || !([_startPosition] call wita_common_fnc_isInsideMap)} do {
     _startPosition = [_indepPos,[_spawnDistance,_spawnDistance+_spawnVariance],[0,360],"CUP_A2_wf_uav_terminal_west"] call wita_common_fnc_findRandomPos;
     _startPosition = [_startPosition, 0, 50, 10, 0, 0.065, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 };

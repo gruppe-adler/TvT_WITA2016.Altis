@@ -8,6 +8,7 @@ class wita_common {
         class getIslandCfgValue {};
         class getWeaponMagazines {};
         class isAgent {};
+        class isInsideMap {};
         class nearestCoast {};
         class startSpectator {};
         class teleport {};

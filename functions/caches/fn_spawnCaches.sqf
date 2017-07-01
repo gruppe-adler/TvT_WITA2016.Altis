@@ -41,7 +41,14 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 5
     };
 
     _cachePos = _cachePos isFlatEmpty [_cacheSize,-1,-1,1,0,_onCoast];
-    if (_roadCheck && {!(_cachePos isEqualTo [0,0,0])} && {count _cachePos > 0} && {({_cachePos distance2D _x < _cacheMinDist} count _allCachePositions) == 0} && {_cachePos distance2D _indepStartPos > _cacheIndepStartDist}) then {
+    if (
+        _roadCheck &&
+        {!(_cachePos isEqualTo [0,0,0])} &&
+        {count _cachePos > 0} &&
+        {({_cachePos distance2D _x < _cacheMinDist} count _allCachePositions) == 0} &&
+        {_cachePos distance2D _indepStartPos > _cacheIndepStartDist} &&
+        {[_cachePos] call wita_common_fnc_isInsideMap}
+    ) then {
         [ASLtoATL _cachePos,_cacheType,_cacheStory,_cacheContainer] call wita_caches_fnc_spawnCrate;
         _allCachePositions pushBack _cachePos;
         [_cachePos,count _allCachePositions] call wita_caches_fnc_cacheMarker;
