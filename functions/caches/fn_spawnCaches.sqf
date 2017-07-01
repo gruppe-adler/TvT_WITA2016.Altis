@@ -20,7 +20,7 @@ private _searchPos = [worldSize/2,worldSize/2,0];
 private _searchRadius = worldSize * 0.7;
 private _loopCount = 0;
 private _allCachePositions = [];
-while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 50}} do {
+while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 500}} do {
     _cacheType = _allCacheTypesWeighted call BIS_fnc_selectRandomWeighted;
 
     _cacheStories = [_cacheType,"cacheStories",[""]] call BIS_fnc_returnConfigEntry;
