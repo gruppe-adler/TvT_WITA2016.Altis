@@ -20,7 +20,7 @@ private _searchPos = [worldSize/2,worldSize/2,0];
 private _searchRadius = worldSize * 0.7;
 private _loopCount = 0;
 private _allCachePositions = [];
-while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 500}} do {
+while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 1000}} do {
     _cacheType = _allCacheTypesWeighted call BIS_fnc_selectRandomWeighted;
 
     _cacheStories = [_cacheType,"cacheStories",[""]] call BIS_fnc_returnConfigEntry;
@@ -57,6 +57,6 @@ while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 5
     _loopCount = _loopCount + 1;
 };
 
-DEBUGMSG_3("cache spawn completed in %1s (%2/%3 caches).",diag_tickTime-_startTime,count _allCachePositions,_cacheAmount);
+DEBUGMSG_3("cache spawn completed in %1s, %2 iterations. (%3/%4 caches).",diag_tickTime-_startTime,_loopCount,count _allCachePositions,_cacheAmount);
 
 missionNamespace setVariable ["WITA_SETUP_CACHESDONE",true,true];

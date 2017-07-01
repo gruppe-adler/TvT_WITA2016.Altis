@@ -15,8 +15,8 @@ class cfgMission {
 
     bluforSpawnDistanceVariance = 350;
     bluforBaseAreaSize = 200;
-    bluforMoneyStartFactor = 1;
-    bluforMoneyGainFactor = 1;
+    bluforMoneyStartFactor = 1.15;
+    bluforMoneyGainFactor = 1.2;
     bluforSpawnDistances[] = {
         2000,
         3000,
@@ -36,10 +36,10 @@ class cfgMission {
     };
 
     cacheAmountFactor = 1;
-    cacheMinDist = 3000;
+    cacheMinDist = 2000;
     cacheIndepStartDist = 2000;
     cacheMarkerVarianceIndep = 0;
-    cacheMarkerVarianceBlufor = 300;
+    cacheMarkerVarianceBlufor = 350;
 
     class civVehicles {
 
