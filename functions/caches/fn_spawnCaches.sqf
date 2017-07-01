@@ -17,7 +17,7 @@ private _allCacheTypesWeighted = [];
 } count _allCacheTypes;
 
 private _searchPos = [worldSize/2,worldSize/2,0];
-private _searchRadius = worldSize * 1.5;
+private _searchRadius = worldSize * 0.7;
 private _loopCount = 0;
 private _allCachePositions = [];
 while {count _allCachePositions < _cacheAmount && {_loopCount < _cacheAmount * 50}} do {
