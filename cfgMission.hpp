@@ -53,7 +53,13 @@ class cfgMission {
         carRoadMinDist = 300;
 
         carTypes[] = {
-            "C_Offroad_01_F"
+            "C_Offroad_01_F",
+            "C_Van_01_fuel_F",
+            "C_Offroad_02_unarmed_F",
+            "C_Truck_02_transport_F",
+            "C_Offroad_01_repair_F",
+            "C_SUV_01_F",
+            "C_Van_01_transport_F"
         };
 
         heliAirportAmountFactor = 1;
@@ -64,7 +70,11 @@ class cfgMission {
 
         boatCoastAmountFactor = 1;
         boatTypes[] = {
-            "C_Boat_Civil_01_F"
+            "C_Boat_Civil_01_F",
+            "C_Boat_Civil_01_rescue_F",
+            "C_Boat_Transport_02_F",
+            "C_Scooter_Transport_01_F",
+            "C_Rubberboat"
         };
     };
 };

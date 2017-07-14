@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=851;
+		nextID=867;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={2637.5776,31.779123,10121.113};
-		dir[]={0.97074205,-0.24016654,-0.007397729};
-		up[]={0.24021912,0.97071278,-0.0018316644};
-		aside[]={-0.0076245861,-7.114495e-007,-1.0000063};
+		pos[]={14576.382,49.406105,15633.05};
+		dir[]={-0.82081491,-0.57041538,-0.030003482};
+		up[]={-0.57003713,0.82135361,-0.020836938};
+		aside[]={-0.036529876,-1.8572609e-007,0.99933785};
 	};
 };
 binarizationWanted=0;
@@ -2442,7 +2442,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ACE_moduleCargoSettings_paradropTimeCoefficent";
+					expression="_this setVariable ['paradropTimeCoefficent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2.5";
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item22
