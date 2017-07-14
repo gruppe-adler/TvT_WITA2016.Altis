@@ -49,7 +49,7 @@ class Vehicles {
     class I_Heli_light_03_unarmed_F {
         description = "Seats: 8";
         price = 5000;
-        stock = 1;
+        stock = 2;
         code = "if (isServer) then {(_this select 2) disableTIEquipment true};";
     };
 
