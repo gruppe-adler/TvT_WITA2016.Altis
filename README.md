@@ -9,6 +9,8 @@ Attribute                   | Explanation
 scoreboardDurationCurrent   | How long will the scoreboard for the current game be displayed on mission end?
 scoreboardDurationAlltime   | How long will the all time scoreboard be displayed on mission end?
 scoreboardSaveTag           | The tag that the statistics are saved under on the server.
+pointsForCivKill            | Points added to agent when he or his bodyguards kill a civilian.
+pointsForBluKill            | Points added to agent when he or his bodyguards kill a BLUFOR player.
 locationDistance            | How far away from a location will INDEP spawn? (minimum, maximum)
 heliDistance                | How far away from INDEP start position will the crashed helicopter spawn? (minimum, maximum)
 locationTypeWeight          | How likely is it, that INDEP will start near this location type. (number 0-1, sum does not have to be 1)

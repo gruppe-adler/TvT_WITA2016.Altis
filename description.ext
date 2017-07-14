@@ -70,3 +70,11 @@ class CfgGradCivs {
 class RscTitles {
     #include "node_modules\grad-fortifications\dialog\hint\title.hpp"
 };
+
+class Extended_Killed_EventHandlers {
+    class CAManBase {
+        class grad_common_unitKilled {
+            killed = "_this call wita_common_fnc_handleUnitKilled";
+        };
+    };
+};

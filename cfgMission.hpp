@@ -4,6 +4,9 @@ class cfgMission {
     scoreboardDurationAlltime = 10;
     scoreboardSaveTag = "XIV_WITA_SCOREBOARD";
 
+    pointsForCivKill = -10;
+    pointsForBluKill = 5;
+
     locationDistance[] = {50,100};
     heliDistance[] = {20,80};
     locationTypeWeight[] = {

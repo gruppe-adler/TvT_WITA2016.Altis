@@ -7,9 +7,11 @@ class wita_common {
         class findRandomPos {};
         class getIslandCfgValue {};
         class getWeaponMagazines {};
+        class handleUnitKilled {};
         class isAgent {};
         class isInsideMap {};
         class nearestCoast {};
+        class onUnitKilled {};
         class startSpectator {};
         class teleport {};
         class teleportSide {};
