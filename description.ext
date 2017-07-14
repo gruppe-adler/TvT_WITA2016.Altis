@@ -13,6 +13,7 @@
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
 #include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
+#include "node_modules\grad-fortifications\grad_fortifications.hpp"
 
 onLoadMission = "";
 author="XiviD & McDiod";
@@ -40,6 +41,7 @@ class CfgFunctions
 	#include "node_modules\grad-scoreboard\cfgFunctions.hpp"
 	#include "node_modules\grad-civs\cfgFunctions.hpp"
 	#include "node_modules\grad-gpsTracker\cfgFunctions.hpp"
+	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
 };
 
 
@@ -63,4 +65,8 @@ class CfgGradCivs {
     exitOn = "";
     onSpawn = "";
     onHeldUp = "";
+};
+
+class RscTitles {
+    #include "node_modules\grad-fortifications\dialog\hint\title.hpp"
 };

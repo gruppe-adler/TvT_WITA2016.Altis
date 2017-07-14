@@ -22,7 +22,7 @@ class CfgFunctions {
 ### Via `npm`
 _for details about what npm is and how to use it, look it up on [npmjs.com](https://www.npmjs.com/)_
 
-1. Install package `grad-gpsTracker` : `npm install --save grad-gpsTracker`
+1. Install package `grad-gpsTracker` : `npm install --save grad-gpstracker`
 2. Prepend your mission's `description.ext` with `#define MODULES_DIRECTORY node_modules`
 3. Append the following lines of code to the `description.ext`:
 

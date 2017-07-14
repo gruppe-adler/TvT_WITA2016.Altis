@@ -7,8 +7,8 @@ if (!isNil "_target") then {[_target] call grad_gpsTracker_fnc_setTarget};
 _display = (findDisplay 46) createDisplay "RscDisplayEmpty";
 
 _components = [_display,_size,_offsetX,_offsetY] call grad_gpsTracker_fnc_createGPS;
-_components params ["_ctrlGroup","_arrowCtrl","_receptionCtrl"];
+_components params ["_ctrlGroup","_arrowCtrl","_receptionCtrl","_bgDayCtrl"];
 
-[_updateInterval,_display,_arrowCtrl,_receptionCtrl,_receptionCode] call grad_gpsTracker_fnc_addPFH;
+[_updateInterval,_display,_arrowCtrl,_receptionCtrl,_bgDayCtrl,_receptionCode] call grad_gpsTracker_fnc_addPFH;
 
 _display
