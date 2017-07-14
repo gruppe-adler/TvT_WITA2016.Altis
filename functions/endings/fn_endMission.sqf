@@ -22,7 +22,7 @@ _this spawn {
         _scoreAlltime = [WITA_SCOREARRAY_CURRENT] call wita_endings_fnc_saveStats;
         _stats = [_scoreAlltime,["NAME","MAP","HIGHSCORE"]] call wita_endings_fnc_compileStatsForScoreboard;
         _duration = [missionConfigFile >> "cfgMission","scoreboardDurationAlltime",10] call BIS_fnc_returnConfigEntry;
-        [_duration,_stats,"AGENTS ALL TIME",true,[true,1,false],[],"",false,false,true] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
+        [_duration,_stats,"AGENTS ALL TIME",true,[true,2,false],[],"",false,false,true] remoteExec ["grad_scoreboard_fnc_loadScoreboard",0,false];
         sleep _duration;
     };
 
