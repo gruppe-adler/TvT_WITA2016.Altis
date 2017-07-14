@@ -3,5 +3,6 @@ class wita_buyables {
         file = buyables\functions;
 
         class initBoatBox {};
+        class unloadBoat {};
     };
 };
