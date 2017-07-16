@@ -19,7 +19,9 @@ class cfgMission {
     bluforSpawnDistanceVariance = 350;
     bluforBaseAreaSize = 200;
     bluforMoneyStartFactor = 1.15;
-    bluforMoneyGainFactor = 1.35;
+    bluforMoneyGainFactor = 1.30;
+    bluforVehicleUnlockTime2 = 1800;
+    bluforVehicleUnlockTime3 = 2700;
     bluforSpawnDistances[] = {
         2000,
         3000,

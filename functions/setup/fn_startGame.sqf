@@ -7,6 +7,7 @@ params ["_indepPos","_bluforPos"];
 
 [WEST] call wita_setup_fnc_setMoney;
 [] call wita_setup_fnc_createTasks;
+[] call wita_mission_fnc_unlockBluforVehicles;
 
 [{missionNamespace getVariable ["CBA_missionTime",0] > 10}, {[] call wita_endings_fnc_checkIndep}, []] call CBA_fnc_waitUntilAndExecute;
 [{

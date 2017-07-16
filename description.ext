@@ -44,6 +44,17 @@ class CfgFunctions
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
 };
 
+class CfgNotifications
+{
+    class wita_notification {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+        description = "%2";
+        duration = 5;
+        priority = 0;
+    };
+};
+
 
 class CfgGradMoneymenu {
     canGiveDefault = 0;

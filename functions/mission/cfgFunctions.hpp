@@ -5,5 +5,6 @@ class wita_mission {
         class handleAgentKilled {};
         class heliFuelFix {};
         class showTracker {};
+        class unlockBluforVehicles {};
     };
 };

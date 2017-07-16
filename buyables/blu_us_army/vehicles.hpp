@@ -53,6 +53,22 @@ class Vehicles {
         code = "if (isServer) then {(_this select 2) disableTIEquipment true};";
     };
 
+    class RHS_MELB_MH6M {
+        description = "Seats: 8";
+        price = 4000;
+        stock = 2;
+        code = "if (isServer) then {(_this select 2) disableTIEquipment true};";
+        permissionLevel = 1;
+    };
+
+    class RHS_MELB_AH6M_L {
+        description = "Seats: 3";
+        price = 6000;
+        stock = 1;
+        code = "if (isServer) then {_veh = (_this select 2); _veh disableTIEquipment true; _veh removeMagazineTurret ['RHS_14Rnd_M151_Magazine_MELB',[-1]]; _veh addMagazineTurret ['RHS_14Rnd_M151_Magazine_MELB',[-1],2]; _veh removeMagazineTurret ['RHS_6000Rnd_762x51_Belt_Red_MELB',[-1]]; _veh addMagazineTurret ['RHS_6000Rnd_762x51_Belt_Red_MELB',[-1],1500]};";
+        permissionLevel = 2;
+    };
+
     class Box_NATO_Equip_F {
         displayName = "Assault Boat (x2)";
         description = "2 assault boats in a box that can be loaded into vehicles.";
