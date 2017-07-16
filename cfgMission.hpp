@@ -19,7 +19,7 @@ class cfgMission {
     bluforSpawnDistanceVariance = 350;
     bluforBaseAreaSize = 200;
     bluforMoneyStartFactor = 1.15;
-    bluforMoneyGainFactor = 1.2;
+    bluforMoneyGainFactor = 1.35;
     bluforSpawnDistances[] = {
         2000,
         3000,
