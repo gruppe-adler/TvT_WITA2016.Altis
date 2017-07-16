@@ -40,7 +40,9 @@ player enableSimulationGlobal false;
             parseText format ["Random cars: %1",["WITA_SETUP_CARSDONE"] call _checkVar], lineBreak,
             parseText format ["Random helicopters: %1",["WITA_SETUP_HELISDONE"] call _checkVar], lineBreak,
             parseText format ["Random boats: %1",["WITA_SETUP_BOATSDONE"] call _checkVar], lineBreak,
-            parseText format ["Random caches: %1",["WITA_SETUP_CACHESDONE"] call _checkVar]
+            parseText format ["Random caches: %1",["WITA_SETUP_CACHESDONE"] call _checkVar], lineBreak,
+            lineBreak,
+            parseText "PLEASE WAIT WHILE MISSION IS LOADING."
         ];
         _ctrlText ctrlSetStructuredText _text;
     } , 0.2, _ctrlText] call CBA_fnc_addPerFrameHandler;
