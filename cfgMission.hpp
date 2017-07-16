@@ -48,6 +48,8 @@ class cfgMission {
 
     class civVehicles {
 
+        randomFuel[] = {0.05,0.35};
+
         carLocationAmountFactor = 0.3;
         carLocationMinDist = 30;
 

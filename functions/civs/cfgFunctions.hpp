@@ -5,5 +5,6 @@ class wita_civs {
         class createSideRoadVehicles {};
         class deleteIfDamaged {};
         class helicopters {};
+        class setVehicleFuel {};
     };
 };

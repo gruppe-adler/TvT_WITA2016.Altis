@@ -36,6 +36,7 @@ private _thesePositions = [];
         _veh setPos _vehPos;
         _veh setVelocity [0,0,1];
         _veh lock 2;
+        [_veh] call wita_civs_fnc_setVehicleFuel;
         [_veh] remoteExec ["wita_mission_fnc_heliFuelFix",0,_veh];
         [_veh,_marker] call wita_civs_fnc_deleteIfDamaged;
     }, [_veh,_vehPos,_marker]] call CBA_fnc_waitUntilAndExecute;

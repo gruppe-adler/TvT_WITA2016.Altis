@@ -88,6 +88,7 @@ while {count _roads > 0 && count _thesePositions < _vehiclesToCreate} do {
                 _veh setPos _vehPos;
                 _veh setVelocity [0,0,1];
                 _veh lock 2;
+                [_veh] call wita_civs_fnc_setVehicleFuel;
                 [_veh,_marker] call wita_civs_fnc_deleteIfDamaged;
             }, [_veh,_roadDir,_chosenDirection,_vehPos,_marker]] call CBA_fnc_waitUntilAndExecute;
         };

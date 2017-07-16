@@ -39,6 +39,7 @@ cacheMarkerVarianceBlufor   | How inaccurate will cache markers be for BLUFOR?
 
 Attribute               | Explanation
 ------------------------|-----------------------------------------------------------------------------------------------
+randomFuel              | Random amount of fuel in all empty civilian vehicles. (0-1), (minimum, maximum)
 carLocationAmountFactor | Factor for car amount in locations. Higher means more.
 carLocationMinDist      | Minimum distance that cars in locations have to have to each other.
 carRoadAmountFactor     | Factor for car amount outside of locations. Higher means more.

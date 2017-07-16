@@ -40,6 +40,7 @@ while {count _thesePositions < _boatsToCreate && {_loopCount < _boatsToCreate * 
             _veh setPos _coastPos;
             _veh setVelocity [0,0,1];
             _veh lock 0;
+            [_veh] call wita_civs_fnc_setVehicleFuel;
             [_veh,_marker] call wita_civs_fnc_deleteIfDamaged;
         }, [_veh,_coastPos,_marker]] call CBA_fnc_waitUntilAndExecute;
     };
