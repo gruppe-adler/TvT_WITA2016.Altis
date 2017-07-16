@@ -21,6 +21,6 @@ private _money = (6000 + ((count ([] call BIS_fnc_listPlayers)) * 300)) * _money
         params ["_args","_handle"];
         _args params ["_moneyPerInterval","_account"];
         [_account,_moneyPerInterval] call grad_lbm_fnc_addFunds;
-        ["wita_notification",["MONEY RECEIVED",format ["BLUFOR received %1 Cr.",round _moneyPerInterval]]] remoteExec ["bis_fnc_showNotification",0,false];
+        ["wita_notification",["MONEY RECEIVED",format ["BLUFOR received %1 Cr.",round _moneyPerInterval]]] remoteExec ["bis_fnc_showNotification",WEST,false];
     } , _moneyInterval, [_moneyPerInterval,_account]] call CBA_fnc_addPerFrameHandler;
 }, [_account,_moneyInterval], _moneyInterval] call CBA_fnc_waitAndExecute;
