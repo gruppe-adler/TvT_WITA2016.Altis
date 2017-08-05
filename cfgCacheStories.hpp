@@ -1,4 +1,5 @@
 class cfgCacheStories {
+
     class hmmwvCrash1 {
         size = 10;
         onRoad = 1;
@@ -27,9 +28,17 @@ class cfgCacheStories {
         script = "cacheStories\breakingContact.sqf";
     };
 
+    class boatWreck {
+        size = 10;
+        onRoad = 0;
+        onCoast = 1;
+        script = "cacheStories\boatWreck.sqf";
+    };
 
-
-
-
-
+    class killedCivilians {
+        size = 15;
+        onRoad = 1;
+        onCoast = 0;
+        script = "cacheStories\killedCivilians.sqf";
+    };
 };
