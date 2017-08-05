@@ -7,6 +7,7 @@ class wita_common {
         class findRandomPos {};
         class getIslandCfgValue {};
         class getWeaponMagazines {};
+        class handleScopeChange {};
         class handleUnitKilled {};
         class isAgent {};
         class isInsideMap {};
