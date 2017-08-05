@@ -48,4 +48,11 @@ class cfgCacheStories {
         onCoast = 0;
         script = "cacheStories\camp1.sqf";
     };
+
+    class uazCrash1 {
+        size = 10;
+        onRoad = 1;
+        onCoast = 0;
+        script = "cacheStories\uazCrash1.sqf";
+    };
 };
