@@ -41,4 +41,11 @@ class cfgCacheStories {
         onCoast = 0;
         script = "cacheStories\killedCivilians.sqf";
     };
+
+    class camp1 {
+        size = 8;
+        onRoad = 0;
+        onCoast = 0;
+        script = "cacheStories\camp1.sqf";
+    };
 };
