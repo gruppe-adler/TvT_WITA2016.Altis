@@ -1,7 +1,7 @@
 class cfgCaches {
 
     class RifleWest1 {
-        probability = 1;
+        probability = 0.8;
 
         //Rifles
         riflesWest = 1;
@@ -76,7 +76,7 @@ class cfgCaches {
     };
 
     class RifleEast1 {
-        probability = 1;
+        probability = 0.8;
 
         riflesEast = 1;
         handguns = 1;
@@ -124,7 +124,7 @@ class cfgCaches {
 
 
     class SniperWest1 {
-        probability = 0.15;
+        probability = 0.25;
 
         sniperWest = 1;
         handguns = 1;
@@ -151,7 +151,7 @@ class cfgCaches {
     };
 
     class SniperEast1 {
-        probability = 0.2;
+        probability = 0.15;
 
         sniperEast = 1;
         handguns = 1;
@@ -176,7 +176,7 @@ class cfgCaches {
     };
 
     class LauncherWest1 {
-        probability = 0.2;
+        probability = 0.3;
         launchersWest = 1;
         magazinesPerLauncher = 3;
         accessoriesWest = 2;
@@ -197,7 +197,7 @@ class cfgCaches {
     };
 
     class LauncherEast1 {
-        probability = 0.3;
+        probability = 0.35;
         launchersEast = 1;
         magazinesPerLauncher = 3;
         accessoriesEast = 2;
@@ -219,7 +219,7 @@ class cfgCaches {
     };
 
     class ItemsCache1 {
-        probability = 0.6;
+        probability = 0.5;
 
         accessoriesWest = 3;
         accessoriesEast = 3;

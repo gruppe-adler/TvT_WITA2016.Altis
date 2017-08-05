@@ -17,67 +17,125 @@
 
 class cfgCacheContents {
     riflesWest[] = {
-        "arifle_MX_F",
-    	"arifle_MX_GL_F",
-    	"arifle_MXC_F",
-    	"arifle_Katiba_F",
-    	"arifle_Katiba_C_F",
-    	"arifle_Katiba_GL_F",
-    	"arifle_TRG21_F",
-    	"arifle_TRG20_F",
-    	"arifle_TRG21_GL_F",
-    	"arifle_Mk20_F",
-    	"arifle_Mk20C_F",
-    	"arifle_Mk20_GL_F",
-    	"SMG_01_F",
-    	"SMG_02_F",
-    	"hgun_PDW2000_F",
-    	"rhs_weap_m4",
-    	"rhs_weap_m4a1_carryhandle",
-    	"rhs_weap_m4a1_carryhandle_grip2",
-    	"rhs_weap_m16a4",
-    	"rhs_weap_m4_m203",
-    	"rhs_weap_m16a4_carryhandle_M203",
-    	"rhs_weap_M590_5RD",
-    	"rhs_weap_M590_8RD",
-        "rhs_weap_ak74m_desert_npz",
-        "rhs_weap_ak74m_camo_npz",
-    	"rhs_weap_ak104_npz"
+        "rhs_weap_ak103_npz",
+        "rhs_weap_ak104_npz",
+        "rhs_weap_ak105_npz",
+        "hgun_PDW2000_F",
+        "arifle_Mk20_F",
+        "arifle_Mk20C_plain_F",
+        "SMG_02_F",
+        "arifle_TRG21_F",
+        "SMG_05_F",
+        "rhs_weap_svdp_npz",
+        "rhs_weap_m21a_pr",
+        "rhs_weap_m21s_pr",
+        "rhs_weap_hk416d10",
+        "rhs_weap_hk416d10_LMT_wd",
+        "rhs_weap_hk416d145",
+        "rhs_weap_m14ebrri",
+        "rhs_weap_m16a4",
+        "rhs_weap_m16a4_carryhandle_pmag",
+        "rhs_weap_m240B",
+        "rhs_weap_m240G",
+        "rhs_weap_m249_pip_L",
+        "rhs_weap_m249_pip_S_para",
+        "rhs_weap_m27iar",
+        "rhs_weap_m4",
+        "rhs_weap_m4_carryhandle_mstock",
+        "rhs_weap_m4_pmag",
+        "rhs_weap_m4a1_blockII",
+        "rhs_weap_m4a1_blockII_KAC_d",
+        "rhs_weap_m4a1_blockII_KAC_wd",
+        "rhs_weap_m4a1_mstock",
+        "rhs_weap_M590_8RD",
+        "rhs_weap_M590_5RD",
+        "rhs_weap_sr25_ec",
+        "rhs_weap_sr25_ec_wd",
+        "rhs_weap_mk18_KAC_bk",
+        "rhs_weap_mk18_wd",
+        "rhsusf_weap_MP7A2",
+        "rhs_weap_g36c",
+        "rhs_weap_g36kv"
     };
 
     sniperWest[] ={
+        "srifle_LRR_F",
+        "rhs_weap_svdp_wd_npz",
+        "rhs_weap_t5000",
+        "rhs_weap_M107_w",
         "rhs_weap_XM2010",
-        "rhs_weap_m40a5"
+        "rhs_weap_XM2010_d",
+        "rhs_weap_m24sws_blk",
+        "rhs_weap_m24sws_ghillie",
+        "rhs_weap_m40a5",
+        "rhs_weap_m40a5_d",
+        "rhs_weap_m38_rail"
     };
 
 
     riflesEast[] = {
-        "rhs_weap_ak74m",
-    	"rhs_weap_ak74m_camo",
-    	"rhs_weap_ak105",
-    	"rhs_weap_akms",
-    	"rhs_weap_ak104",
+        "rhs_weap_ak103_1",
+        "rhs_weap_ak104",
+        "rhs_weap_ak105",
+        "rhs_weap_ak74",
+        "rhs_weap_ak74_2",
+        "rhs_weap_ak74m_2mag",
+        "rhs_weap_ak74m_camo",
+        "rhs_weap_ak74m_fullplum",
+        "rhs_weap_ak74n",
+        "rhs_weap_akms",
+        "rhs_weap_akm",
+        "rhs_weap_aks74",
+        "rhs_weap_aks74n",
+        "rhs_weap_aks74u",
+        "rhs_weap_aks74un",
+        "rhs_weap_asval",
+        "rhs_weap_pkm",
+        "rhs_weap_pkp",
+        "rhs_weap_pp2000",
+        "rhs_weap_vss",
+        "rhs_weap_m21a",
+        "rhs_weap_m21s",
+        "rhs_weap_m70ab2",
+        "rhs_weap_m70b1",
+        "rhs_weap_m92",
+        "rhs_weap_m38",
+        "rhs_weap_m70b1n",
+        "rhs_weap_m84"
     };
 
     sniperEast[] = {
-        "rhs_weap_t5000"
+        "rhs_weap_asval",
+        "rhs_weap_svds",
+        "rhs_weap_vss"
     };
 
     handguns[] = {
-        "hgun_P07_snds_F",
-    	"hgun_Rook40_F",
-    	"hgun_Rook40_snds_F",
-    	"hgun_ACPC2_F",
-    	"hgun_ACPC2_snds_F",
-    	"rhsusf_weap_m1911a1",
-    	"rhsusf_weap_glock17g4",
-    	"rhsusf_weap_m9"
+        "hgun_Pistol_heavy_02_F",
+        "hgun_ACPC2_F",
+        "hgun_Pistol_heavy_01_F",
+        "rhsusf_weap_glock17g4",
+        "rhsusf_weap_m1911a1",
+        "rhs_weap_M320",
+        "rhsusf_weap_m9",
+        "rhs_weap_pya",
+        "hgun_Rook40_F",
+        "hgun_P07_F",
+        "rhs_weap_makarov_pm",
+        "rhs_weap_pp2000_folded",
+        "rhs_weap_rsp30_white",
+        "hgun_Pistol_Signal_F",
+        "rhs_weap_tr8"
     };
 
     launchersWest[] = {
-        "rhs_weap_M136_hedp",
+        "rhs_weap_fgm148",
+        "rhs_weap_fim92",
         "rhs_weap_M136",
-        "Rhs_weap_stinger_Launcher"
+        "rhs_weap_M136_hedp",
+        "rhs_weap_M136_hp",
+        "rhs_weap_m72a7",
+        "rhs_weap_smaw"
     };
 
     launchersEast[] = {
@@ -85,8 +143,7 @@ class cfgCacheContents {
         "rhs_weap_strela",
         "rhs_weap_rpg7",
         "rhs_weap_rpg26",
-        "rhs_weap_rshg2",
-        "rhs_weap_m72a7"
+        "rhs_weap_rshg2"
     };
 
     accessoriesWest[] = {
@@ -169,20 +226,46 @@ class cfgCacheContents {
     };
 
     scopesWest[] = {
+        "FHQ_optic_ACOG",
+        "FHQ_optic_ACOG_tan",
+        "rhsusf_acc_ACOG2_USMC",
+        "rhsusf_acc_ACOG_USMC",
+        "optic_Arco",
+        "optic_ERCO_blk_F",
+        "rhsusf_acc_ELCAN",
+        "rhsusf_acc_ACOG",
+        "optic_MRCO",
+        "optic_Hamr",
+        "rhsusf_acc_SpecterDR",
+        "rhsusf_acc_ACOG_RMR",
+        "rhsusf_acc_ACOG_wd",
+        "FHQ_optic_VCOG"
     };
 
     scopesEast[] = {
+        "rhs_acc_1p29",
+        "rhs_acc_1p78",
+        "rhs_acc_nita",
+        "rhs_acc_pgo7v"
     };
 
     sniperScopesWest[]={
-        "rhs_acc_pso1m21",
+        "rhs_acc_dh520x56",
+        "optic_DMS",
+        "FHQ_optic_LeupoldERT",
+        "optic_LRPS",
+        "rhsusf_acc_M8541",
+        "rhsusf_acc_premier",
         "rhsusf_acc_LEUPOLDMK4",
-        "optic_LRPS"
+        "rhsusf_acc_LEUPOLDMK4_2",
+        "rhsusf_acc_LEUPOLDMK4_2_d",
+        "optic_SOS",
+        "rhsusf_acc_ACOG_MDO"
     };
+
     sniperScopesEast[]={
-        "rhs_acc_pso1m21",
-        "rhsusf_acc_LEUPOLDMK4",
-        "optic_LRPS"
+        "rhs_acc_pso1m2",
+        "rhs_acc_pso1m21"
     };
 
     grenades[] = {
@@ -208,13 +291,18 @@ class cfgCacheContents {
     items[] = {
         "NVGoggles",
     	"NVGoggles_OPFOR",
-    	"ACE_MapTools",
-    	"ACE_Clacker",
-    	"ACE_DefusalKit",
-    	"ACE_M26_Clacker",
-    	"ACE_Flashlight_MX991",
-    	"ACE_Flashlight_KSF1",
-    	"ACE_RangeCard",
+    	"ACE_ATragMX",
+        "ACE_DeadManSwitch",
+        "ACE_DefusalKit",
+        "ACE_EntrenchingTool",
+        "ACE_Kestrel4500",
+        "ACE_M26_Clacker",
+        "ACE_Clacker",
+        "ACE_Flashlight_XL50",
+        "ACE_RangeCard",
+        "ACE_SpottingScope",
+        "ACE_Tripod",
+        "ACE_wirecutter",
     	"Binocular",
     	"Laserdesignator_03",
     	"ACE_Vector"
