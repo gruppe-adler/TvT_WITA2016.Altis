@@ -16,6 +16,7 @@ class grad_gpsTracker {
         class setTarget {};
         class updateArrow {};
         class updateBackground {};
+        class updateDistance {};
         class updateReception {};
     };
 };

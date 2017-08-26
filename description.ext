@@ -70,8 +70,10 @@ class CfgGradMoneymenu {
 
 class CfgGradCivs {
     autoInit = 0;
-    maxCivs = 60;
-    spawnDistances[] = {1000,4500};
+    maxCivsOnFoot = 40;
+	maxCivsInVehicles = 20;
+    spawnDistancesOnFoot[] = {1000,4500};
+	spawnDistancesInVehicles[] = {1500,4500};
     debugMode = 1;
     exitOn = "";
     onSpawn = "";
