@@ -27,7 +27,7 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
 
         [{{scriptDone _x} count (_this select 0) == count (_this select 0)}, {[_this select 1,_this select 2] call wita_setup_fnc_startGame}, [[_carsHandle,_heliHandle,_boatHandle,_cacheHandle],_indepPos,_bluforPos]] call CBA_fnc_waitUntilAndExecute;
 
-        [] call wita_init_fnc_initCivs;
+        [{[] call wita_init_fnc_initCivs},[],120] call CBA_fnc_waitAndExecute;
     };
 
     if (hasInterface) then {

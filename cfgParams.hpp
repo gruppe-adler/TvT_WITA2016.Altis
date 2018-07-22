@@ -3,7 +3,7 @@ class Params {
         title = "Debug Mode";
         values[] = {0,1};
         texts[] = {"false","true"};
-        default = 1;
+        default = 0;
     };
 
     class RANKED_MODE {

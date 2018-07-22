@@ -74,7 +74,7 @@ class CfgGradCivs {
 	maxCivsInVehicles = 20;
     spawnDistancesOnFoot[] = {1000,4500};
 	spawnDistancesInVehicles[] = {1500,4500};
-    debugMode = 1;
+    debugMode = 0;
     exitOn = "";
     onSpawn = "";
     onHeldUp = "";
