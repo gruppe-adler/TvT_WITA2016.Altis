@@ -10,6 +10,6 @@
         if (_pos isEqualTo [0,0,0]) then {_pos = _searchPos};
         _unit setPos _pos;
 
-        [{_this allowDamage true},_unit,2] call CBA_fnc_waitAndExecute;
+        [{_this allowDamage true},_unit,60] call CBA_fnc_waitAndExecute;
     }, _this, random _randomCountdown] call CBA_fnc_waitAndExecute;
 },_this,5] call CBA_fnc_waitUntilAndExecute;
