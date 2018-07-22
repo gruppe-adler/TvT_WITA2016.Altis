@@ -73,7 +73,7 @@ class cfgCivilians {
         };
 
         vehicles[] = {
-            "C_Hatchback_01_F",
+            /* "C_Hatchback_01_F", */
             "C_Hatchback_01_sport_F",
             "C_Offroad_01_F",
             "C_Offroad_01_repair_F",
@@ -232,7 +232,7 @@ class cfgCivilians {
             "C_Offroad_02_unarmed_F_blue",
             "C_Offroad_02_unarmed_F_green",
 
-            "C_Hatchback_01_F",
+            /* "C_Hatchback_01_F", */
             "C_Hatchback_01_sport_F",
             "C_Offroad_01_F",
             "C_Offroad_01_repair_F",
