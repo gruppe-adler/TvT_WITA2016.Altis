@@ -52,7 +52,7 @@ class agent {
         //BODYGUARD
 		class Medic_F: Soldier_F {
             uniform = "U_BG_Guerrilla_6_1";
-            vest = "V_TacVestEX_C";
+            vest = "V_TacVest_oli";
             headgear = "rhsusf_opscore_fg";
 
             addItemsToVest[] = {
