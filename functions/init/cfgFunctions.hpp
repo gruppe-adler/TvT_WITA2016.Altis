@@ -5,5 +5,6 @@ class wita_init {
         class setIslandParams {};
         class setMissionParams {};
         class tfarSettings {preInit = 1;};
+        class waitServerFpsRecovery {};
     };
 };

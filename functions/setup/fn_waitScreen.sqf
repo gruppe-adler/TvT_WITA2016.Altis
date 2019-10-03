@@ -41,6 +41,7 @@ player enableSimulationGlobal false;
             parseText format ["Random helicopters: %1",["WITA_SETUP_HELISDONE"] call _checkVar], lineBreak,
             parseText format ["Random boats: %1",["WITA_SETUP_BOATSDONE"] call _checkVar], lineBreak,
             parseText format ["Random caches: %1",["WITA_SETUP_CACHESDONE"] call _checkVar], lineBreak,
+            parseText format ["Server FPS recovery: %1",["WITA_INIT_SERVERFPSDONE"] call _checkVar], lineBreak,
             lineBreak,
             parseText "PLEASE WAIT WHILE MISSION IS LOADING."
         ];

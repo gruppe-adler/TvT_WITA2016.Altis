@@ -25,7 +25,10 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
         _boatHandle = [] spawn wita_civs_fnc_boats;
         _cacheHandle = [_indepPos] spawn wita_caches_fnc_spawnCaches;
 
-        [{{scriptDone _x} count (_this select 0) == count (_this select 0)}, {[_this select 1,_this select 2] call wita_setup_fnc_startGame}, [[_carsHandle,_heliHandle,_boatHandle,_cacheHandle],_indepPos,_bluforPos]] call CBA_fnc_waitUntilAndExecute;
+        [{{!scriptDone _x} count (_this select 0) == 0},{
+            [] call wita_init_fnc_waitServerFpsRecovery;
+            [{missionNamespace getVariable ["WITA_INIT_SERVERFPSDONE",false]},{[_this select 1,_this select 2] call wita_setup_fnc_startGame},_this] call CBA_fnc_waitUntilAndExecute;
+        },[[_carsHandle,_heliHandle,_boatHandle,_cacheHandle],_indepPos,_bluforPos]] call CBA_fnc_waitUntilAndExecute;
 
         [{[] call wita_init_fnc_initCivs},[],120] call CBA_fnc_waitAndExecute;
     };
