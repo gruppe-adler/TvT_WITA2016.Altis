@@ -7,5 +7,3 @@ private _type = ["type","mediterranean"] call wita_common_fnc_getIslandCfgValue;
 [[missionConfigFile >> "cfgCivilians" >> _type,"headgear",[]] call BIS_fnc_returnConfigEntry] call grad_civs_fnc_setHeadgear;
 [[missionConfigFile >> "cfgCivilians" >> _type,"vehicles",[]] call BIS_fnc_returnConfigEntry] call grad_civs_fnc_setVehicles;
 [WITA_DEBUGMODE] call grad_civs_fnc_setDebugMode;
-
-[{[] remoteExec ["grad_civs_fnc_initModule",0,true]}, [], 10] call CBA_fnc_waitAndExecute;
