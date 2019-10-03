@@ -3,7 +3,7 @@
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 params ["_entry","_defaultValue"];
-_cfg = missionConfigFile >> "CfgIslands" >> worldName;
+_cfg = missionConfigFile >> "cfgGradIslands" >> worldName;
 if (!isClass _cfg) exitWith {ERROR_1("Config for island %1 not found.", worldName); _defaultValue};
 
 if (isNumber (_cfg >> _entry)) exitWith {getNumber (_cfg >> _entry)};

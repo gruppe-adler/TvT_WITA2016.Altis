@@ -2,7 +2,7 @@
 
 params ["_locationArray"];
 
-_locationBlacklist = [(missionConfigFile >> "CfgIslands" >>  worldName >> "locationBlacklist"), "array", []] call CBA_fnc_getConfigEntry;
+_locationBlacklist = [(missionConfigFile >> "cfgGradIslands" >>  worldName >> "urbanops_locationBlacklist"), "array", []] call CBA_fnc_getConfigEntry;
 
 _return = [];
 {

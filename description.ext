@@ -5,7 +5,6 @@
 #include "cfgCacheStories.hpp"
 #include "cfgCaches.hpp"
 #include "cfgCivilians.hpp"
-#include "cfgIslands.hpp"
 #include "cfgMission.hpp"
 #include "buyables\cfgBuyables.hpp"
 #include "loadouts\loadouts.hpp"
@@ -14,6 +13,7 @@
 #include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
 #include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
 #include "node_modules\grad-fortifications\grad_fortifications.hpp"
+#include "node_modules\grad-islandconfig\cfgGradIslands.hpp"
 
 onLoadMission = "";
 author="XiviD & McDiod";

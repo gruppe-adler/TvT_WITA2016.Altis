@@ -1,6 +1,6 @@
 #include "component.hpp"
 
-_configPath = missionConfigFile >> "CfgIslands" >>  worldName >> "customLocations";
+_configPath = missionConfigFile >> "cfgGradIslands" >>  worldName >> "customLocations";
 _customLocations = "true" configClasses _configPath;
 
 {
