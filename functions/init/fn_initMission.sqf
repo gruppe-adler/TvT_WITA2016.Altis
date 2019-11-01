@@ -37,7 +37,7 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
         [{missionNamespace getVariable ["WITA_GAMESTARTED",false] && !isNull player}, {[] call wita_setup_fnc_addKilledEH}, []] call CBA_fnc_waitUntilAndExecute;
         if (didJIP && {missionNamespace getVariable ["WITA_GAMESTARTED",false]} && {!isNil "WITA_BLUFORPOS"} && {!isNil "WITA_INDEPPOS"}) then {
             if (playerSide == INDEPENDENT) then {
-                _randomPos = [WITA_BLUFORPOS,[0,2]] call wita_common_fnc_findRandomPos;
+                _randomPos = [WITA_INDEPPOS,[0,2]] call wita_common_fnc_findRandomPos;
                 [player,_randomPos] call wita_common_fnc_teleport;
             } else {
                 _randomPos = [WITA_BLUFORPOS,[3,8]] call wita_common_fnc_findRandomPos;
