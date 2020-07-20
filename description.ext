@@ -69,20 +69,20 @@ class CfgGradMoneymenu {
 
 class CfgGradCivs {
     autoInit = 1;
-    maxCivsOnFoot = 30;
-    maxCivsResidents = 40;
-    maxCivsInVehicles = 15;
+    maxCivsOnFoot = 10;
+    maxCivsResidents = 30;
+    maxCivsInVehicles = 30;
     spawnDistancesOnFoot[] = {1000,4500};
     spawnDistancesInVehicles[] = {1000,4500};
     debugCivState = 0;
     debugFps = 0;
     minCivUpdateTime = 3;
-	minFps = 35;
+    minFps = 35;
     automaticVehicleGroupSize = 1;
     exitOn = "";
     onSpawn = "";
     onHeldUp = "";
-    backpackProbability = 0.2;
+    backpackProbability = 0.1;
 };
 
 class RscTitles {
