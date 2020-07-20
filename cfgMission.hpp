@@ -50,10 +50,10 @@ class cfgMission {
 
         randomFuel[] = {0.05,0.35};
 
-        carLocationAmountFactor = 0.3;
+        carLocationAmountFactor = 0.150;
         carLocationMinDist = 30;
 
-        carRoadAmountFactor = 0.03;
+        carRoadAmountFactor = 0.015;
         carRoadMinDist = 300;
 
         carTypes[] = {
@@ -72,7 +72,7 @@ class cfgMission {
             "C_Heli_Light_01_civil_F"
         };
 
-        boatCoastAmountFactor = 1;
+        boatCoastAmountFactor = 0.75;
         boatTypes[] = {
             "C_Boat_Civil_01_F",
             "C_Boat_Civil_01_rescue_F",

@@ -1,6 +1,6 @@
 #include "component.hpp"
 
-#define MINWAITTIME         20
+#define MINWAITTIME         30
 #define MAXWAITTIME         120
 #define FPSTHRESHOLD        35
 #define CONTINUOUSFPSTIME   10
