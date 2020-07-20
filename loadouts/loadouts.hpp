@@ -7,8 +7,6 @@ class Loadouts {
 
     class Faction {
         #include "agent.hpp"
-        #include "ger_heer_w.hpp"
-        #include "ger_heer_d.hpp"
-        #include "us_army.hpp"
+        #include "..\node_modules\grad-factions-tvt\loadouts.hpp"
     };
 };
