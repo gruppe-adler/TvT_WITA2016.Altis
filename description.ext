@@ -43,7 +43,6 @@ class CfgFunctions
 	#include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
     #include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 	#include "node_modules\grad-scoreboard\cfgFunctions.hpp"
-	#include "node_modules\grad-civs\cfgFunctions.hpp"
 	#include "node_modules\grad-gpsTracker\cfgFunctions.hpp"
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
     #include "node_modules\@gruppe-adler\replay\cfgFunctions.hpp"
@@ -80,24 +79,6 @@ class CfgGradMoneymenu {
     startMoney = 0;
     startBankBalance = 0;
     atmObjects[] = {};
-};
-
-class CfgGradCivs {
-    autoInit = 1;
-    maxCivsOnFoot = 10;
-    maxCivsResidents = 30;
-    maxCivsInVehicles = 30;
-    spawnDistancesOnFoot[] = {1000,4500};
-    spawnDistancesInVehicles[] = {1000,4500};
-    debugCivState = 0;
-    debugFps = 0;
-    minCivUpdateTime = 3;
-    minFps = 35;
-    automaticVehicleGroupSize = 1;
-    exitOn = "";
-    onSpawn = "";
-    onHeldUp = "";
-    backpackProbability = 0.1;
 };
 
 class RscTitles {

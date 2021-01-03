@@ -3,7 +3,7 @@
 
 
 if (missionNamespace getVariable ["WITA_GAMESTARTED",false]) exitWith {};
-player enableSimulationGlobal false;
+player enableSimulation false;
 
 "wita_waitScreen" cutRsc ["RscTitleDisplayEmpty","PLAIN",0,false];
 [{!isNull (uiNamespace getVariable ["RscTitleDisplayEmpty",displayNull])}, {
@@ -20,7 +20,7 @@ player enableSimulationGlobal false;
         params ["_ctrlText","_handle"];
         if (missionNamespace getVariable ["WITA_GAMESTARTED",false]) exitWith {
             "wita_waitScreen" cutRsc ["RscTitleDisplayEmpty","PLAIN",0,false];
-            player enableSimulationGlobal true;
+            player enableSimulation true;
             [_handle] call CBA_fnc_removePerFrameHandler;
         };
 

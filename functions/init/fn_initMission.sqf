@@ -30,7 +30,6 @@ wita_missionParam_RESPAWNTIME = "RESPAWNTIME" call BIS_fnc_getParamValue;
             [{missionNamespace getVariable ["WITA_INIT_SERVERFPSDONE",false]},{[_this select 1,_this select 2] call wita_setup_fnc_startGame},_this] call CBA_fnc_waitUntilAndExecute;
         },[[_carsHandle,_heliHandle,_boatHandle,_cacheHandle],_indepPos,_bluforPos]] call CBA_fnc_waitUntilAndExecute;
 
-        [{[] call wita_init_fnc_initCivs},[],120] call CBA_fnc_waitAndExecute;
     };
 
     if (hasInterface) then {
