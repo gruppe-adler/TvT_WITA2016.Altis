@@ -15,6 +15,8 @@
 #include "node_modules\grad-fortifications\grad_fortifications.hpp"
 #include "node_modules\grad-islandconfig\cfgGradIslands.hpp"
 #include "node_modules\grad-tvtsettings\cba_settings.sqf"
+#include "node_modules\@gruppe-adler\replay\ui\defines.hpp"
+#include "node_modules\@gruppe-adler\replay\ui\dialog.hpp"
 
 cba_settings_hasSettingsFile = 1;
 
@@ -45,6 +47,7 @@ class CfgFunctions
 	#include "node_modules\grad-civs\cfgFunctions.hpp"
 	#include "node_modules\grad-gpsTracker\cfgFunctions.hpp"
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
+    #include "node_modules\@gruppe-adler\replay\cfgFunctions.hpp"
 };
 
 class CfgNotifications
@@ -58,6 +61,16 @@ class CfgNotifications
     };
 };
 
+class GRAD_Replay {
+    precision = 3;                                    // precision of replay, 5 means every 5 seconds one snapshot (number)
+    trackedSides[] = {"west", "east", "civilian"};    // defines the sides that will be tracked (possible are "west", "east", "independent", "civilian") (array)
+    stepsPerTick = 1;                                 // defines steps played back at once (number)
+    trackedVehicles = 0;                              // defines if empty and AI steered vehicles will be tracked (0/1)
+    trackedAI = 0;                                    // defines if AI will be tracked (0/1)
+    sendingChunkSize = 10;                            // higher number means replay loading is faster, but might cause instability / lags during loading (number)
+    trackShots = 1;                                   // defines if shots will be tracked (0/1)
+    upload = 1;                                       // defines if replay data will be uploaded to replay.gruppe-adler.de (0/1)
+};
 
 class CfgGradMoneymenu {
     canGiveDefault = 0;
