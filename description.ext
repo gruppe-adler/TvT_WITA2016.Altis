@@ -14,6 +14,9 @@
 #include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
 #include "node_modules\grad-fortifications\grad_fortifications.hpp"
 #include "node_modules\grad-islandconfig\cfgGradIslands.hpp"
+#include "node_modules\grad-tvtsettings\cba_settings.sqf"
+
+cba_settings_hasSettingsFile = 1;
 
 onLoadMission = "";
 author="XiviD & McDiod";

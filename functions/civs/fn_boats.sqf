@@ -46,6 +46,8 @@ while {count _thesePositions < _boatsToCreate && {_loopCount < _boatsToCreate * 
     };
 
     _loopCount = _loopCount + 1;
+
+    sleep 0.1; // to prevent cpu load on maps with limited water areas
 };
 
 DEBUGMSG_2("boat spawn completed in %1s (%2 boats).",diag_tickTime-_startTime,count _thesePositions);
