@@ -14,7 +14,6 @@
 #include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
 #include "node_modules\grad-fortifications\grad_fortifications.hpp"
 #include "node_modules\grad-islandconfig\cfgGradIslands.hpp"
-#include "node_modules\grad-tvtsettings\cba_settings.sqf"
 #include "node_modules\@gruppe-adler\replay\ui\defines.hpp"
 #include "node_modules\@gruppe-adler\replay\ui\dialog.hpp"
 
