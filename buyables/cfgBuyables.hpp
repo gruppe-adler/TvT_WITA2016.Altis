@@ -4,4 +4,5 @@ class CfgGradBuymenu {
 
     #include "blu_ger_heer\blu_ger_heer.hpp"
     #include "blu_us_army\blu_us_army.hpp"
+    #include "blu_pmc\blu_pmc.hpp"
 };
