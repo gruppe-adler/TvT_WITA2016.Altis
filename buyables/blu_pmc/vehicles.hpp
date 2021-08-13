@@ -16,6 +16,7 @@ class Vehicles {
         description = "Seats: 6";
         price = 4000;
         stock = 10;
+        code = "if (isServer) then {[(_this select 2), ['BLACK',1], true] call BIS_fnc_initVehicle;};";
     };
 
     class C_Heli_Light_01_civil_F {
@@ -23,6 +24,7 @@ class Vehicles {
         price = 2000;
         stock = 2;
         code = "if (isServer) then {(_this select 2) disableTIEquipment true; [(_this select 2), ['Ion',1], ['AddTread',0,'AddTread_Short',0]] call BIS_fnc_initVehicle;};";
+        permissionLevel = 1;
     };
 
     class UK3CB_UN_I_UH1H {
@@ -30,7 +32,7 @@ class Vehicles {
         price = 5000;
         stock = 2;
         code = "if (isServer) then {(_this select 2) disableTIEquipment true; [(_this select 2), ['BLACK',1], true] call BIS_fnc_initVehicle;};";
-        permissionLevel = 1;
+        permissionLevel = 2;
     };
 
     class Box_NATO_Equip_F {

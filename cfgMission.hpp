@@ -40,8 +40,8 @@ class cfgMission {
         "I_Quadbike_01_F"
     };
 
-    cacheAmountFactor = 3;
-    cacheMinDist = 1000;
+    cacheAmountFactor = 4;
+    cacheMinDist = 700;
     cacheIndepStartDist = 2000;
     cacheMarkerVarianceIndep = 0;
     cacheMarkerVarianceBlufor = 350;
