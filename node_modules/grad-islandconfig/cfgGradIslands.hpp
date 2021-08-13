@@ -143,6 +143,15 @@ class cfgGradIslands {
         };
     };
 
+    class DYA {
+        displayName = "Diyala";
+        type = "middle eastern";
+        isWoodland = false;
+        spawnPosBlu[] = {2930,3144,0};
+        spawnPosOpf[] = {5426,7443,0};
+        spawnPosInd[] = {1622,7429,0};
+    };
+
     class Enoch {
         displayName = "Livonia";
         type = "russian";
@@ -575,6 +584,15 @@ class cfgGradIslands {
         spawnPosBlu[] = {1495,16760,0};
         spawnPosOpf[] = {1895,16760,0};
         spawnPosInd[] = {2295,16760,0};
+    };
+
+    class tem_suursaariv {
+        displayName = "Suursaari";
+        type = "russian";
+        isWoodland = true;
+        spawnPosBlu[] = {1288,5033,0};
+        spawnPosOpf[] = {2487,1990,0};
+        spawnPosInd[] = {10154,6449,0};
     };
 
     class tem_vinjesvingenc {
