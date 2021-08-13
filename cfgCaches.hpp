@@ -24,7 +24,7 @@ class cfgCaches {
         magazinesPerRifle = 4;
 
         //Accessories
-        accessoriesWest = 3;
+        accessoriesWest = 1;
         accessoriesEast = 0;
 
         //Sights
@@ -40,10 +40,10 @@ class cfgCaches {
         sniperScopesEast = 0;
 
         //Extras
-        grenades = 2;
-        items = 2;
-        medical = 5;
-        backpacks = 1;
+        grenades = 0;
+        items = 0;
+        medical = 0;
+        backpacks = 0;
 
         cacheContainers[] = {
             "Box_NATO_WpsSpecial_F" //Welche Box sichtbar am Boden liegt
@@ -127,13 +127,13 @@ class cfgCaches {
         probability = 0.25;
 
         sniperWest = 1;
-        handguns = 1;
-        magazinesPerHandgun = 2;
+        handguns = 0;
+        magazinesPerHandgun = 0;
         magazinesPerRifle = 3;
-        accessoriesWest = 2;
+        accessoriesWest = 1;
         sniperScopesWest = 1;
-        grenades = 2;
-        items = 2;
+        grenades = 0;
+        items = 0;
         medical = 7;
         backpacks = 1;
 
@@ -175,14 +175,15 @@ class cfgCaches {
         };
     };
 
+    /* Launcher only */
     class LauncherWest1 {
         probability = 0.3;
         launchersWest = 1;
         magazinesPerLauncher = 3;
-        accessoriesWest = 2;
-        items = 2;
-        medical = 4;
-        backpacks = 1;
+        accessoriesWest = 0;
+        items = 0;
+        medical = 0;
+        backpacks = 0;
 
         cacheContainers[] = {
             "Box_NATO_WpsSpecial_F"
@@ -218,16 +219,17 @@ class cfgCaches {
         };
     };
 
+    /* Medical Stuff, Items + Backpack */
     class ItemsCache1 {
         probability = 0.5;
 
-        accessoriesWest = 3;
-        accessoriesEast = 3;
-        sightsWest = 1;
-        sightsEast = 1;
-        grenades = 2;
-        items = 5;
-        medical = 10;
+        accessoriesWest = 0;
+        accessoriesEast = 0;
+        sightsWest = 0;
+        sightsEast = 0;
+        grenades = 0;
+        items = 10;
+        medical = 20;
         backpacks = 1;
 
         cacheContainers[] = {

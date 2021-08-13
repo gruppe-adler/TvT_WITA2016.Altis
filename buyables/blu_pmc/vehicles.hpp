@@ -8,6 +8,7 @@ class Vehicles {
         description = "Seats: 4";
         price = 800;
         stock = 10;
+        code = "if (isServer) then {[(_this select 2), ['BLACK',1], true] call BIS_fnc_initVehicle;};";
     };
 
     class UK3CB_CHC_B_SUV {

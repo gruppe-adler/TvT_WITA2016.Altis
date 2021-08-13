@@ -20,8 +20,8 @@ class cfgMission {
     bluforBaseAreaSize = 200;
     bluforMoneyStartFactor = 1.15;
     bluforMoneyGainFactor = 1.30;
-    bluforVehicleUnlockTime2 = 1800;
-    bluforVehicleUnlockTime3 = 2700;
+    bluforVehicleUnlockTime2 = 600;
+    bluforVehicleUnlockTime3 = 1200;
     bluforSpawnDistances[] = {
         2000,
         3000,
@@ -40,8 +40,8 @@ class cfgMission {
         "I_Quadbike_01_F"
     };
 
-    cacheAmountFactor = 1;
-    cacheMinDist = 2000;
+    cacheAmountFactor = 3;
+    cacheMinDist = 1000;
     cacheIndepStartDist = 2000;
     cacheMarkerVarianceIndep = 0;
     cacheMarkerVarianceBlufor = 350;
