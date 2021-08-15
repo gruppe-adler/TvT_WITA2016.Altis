@@ -66,7 +66,7 @@ class cfgMission {
             "C_Van_01_transport_F"
         };
 
-        heliAirportAmountFactor = 1;
+        heliAirportAmountFactor = 0.2;
         heliFuelFixValue = 0.03;
         heliTypes[] = {
             "C_Heli_Light_01_civil_F"
