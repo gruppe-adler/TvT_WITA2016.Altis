@@ -36,9 +36,9 @@ class Vehicles {
     };
 
     class Box_NATO_Equip_F {
-        displayName = "Armed Fisher Boat (Dshkm)";
+        displayName = "Armed Boat (M2)";
         description = "2 assault boats in a box that can be loaded into vehicles.";
-        code = "if (isServer) then {[_this select 2,'UK3CB_NAP_B_Fishing_Boat_DSHKM',2] remoteExec ['wita_buyables_fnc_initBoatBox',0,true]}";
+        code = "if (isServer) then {[_this select 2,'UK3CB_TKA_I_RHIB',2] remoteExec ['wita_buyables_fnc_initBoatBox',0,true]}";
         price = 1500;
         stock = 10;
     };
