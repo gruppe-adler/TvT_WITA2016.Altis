@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=900;
+		nextID=919;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=21;
+		nextID=24;
 	};
 	class Camera
 	{
-		pos[]={2549.074,7.0242171,9976.6963};
-		dir[]={0.90235031,-0.094939023,0.42041716};
-		up[]={0.086056963,0.99548304,0.040095098};
-		aside[]={0.42232475,3.7252903e-009,-0.90644461};
+		pos[]={2764.7546,38.294228,9940.1621};
+		dir[]={0.91347986,-0.2386689,0.32953259};
+		up[]={0.22450727,0.97110105,0.080989711};
+		aside[]={0.33933917,7.4505806e-009,-0.94066417};
 	};
 };
 binarizationWanted=0;
@@ -2188,7 +2188,7 @@ class Mission
 			type="Empty";
 			angle=269.68381;
 			id=260;
-			atlOffset=166.4241;
+			atlOffset=18.44915;
 		};
 		class Item1
 		{
@@ -2206,7 +2206,7 @@ class Mission
 						angles[]={6.2551923,0,0.014664836};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -2216,7 +2216,7 @@ class Mission
 					};
 					id=734;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.5749207e-005;
+					atlOffset=109.64533;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2326,7 +2326,6 @@ class Mission
 						angles[]={6.2551923,0.31252003,0.014664836};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -2334,7 +2333,7 @@ class Mission
 					};
 					id=771;
 					type="I_medic_F";
-					atlOffset=-2.5749207e-005;
+					atlOffset=109.70622;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2444,7 +2443,6 @@ class Mission
 						angles[]={6.2551923,0.31252003,0.014664836};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -2452,7 +2450,7 @@ class Mission
 					};
 					id=787;
 					type="I_medic_F";
-					atlOffset=-2.5749207e-005;
+					atlOffset=109.76023;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2558,7 +2556,7 @@ class Mission
 			{
 			};
 			id=437;
-			atlOffset=-2.5749207e-005;
+			atlOffset=109.64533;
 		};
 		class Item2
 		{
@@ -2569,7 +2567,7 @@ class Mission
 			};
 			id=690;
 			type="ModuleCuratorAddEditableObjects";
-			atlOffset=185.97;
+			atlOffset=71.379448;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2642,7 +2640,7 @@ class Mission
 			name="loggedCurator";
 			id=693;
 			type="ModuleCurator_F";
-			atlOffset=92.724113;
+			atlOffset=-50.207737;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2753,6 +2751,7 @@ class Mission
 			name="votedCurator";
 			id=710;
 			type="ModuleCurator_F";
+			atlOffset=-136.73595;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2862,6 +2861,7 @@ class Mission
 			};
 			id=717;
 			type="ModuleSlingload_F";
+			atlOffset=-132.00229;
 		};
 		class Item6
 		{
@@ -2879,7 +2879,7 @@ class Mission
 						angles[]={6.2605233,0,0.0093350215};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -2889,7 +2889,7 @@ class Mission
 					};
 					id=757;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.1934509e-005;
+					atlOffset=109.3826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2999,7 +2999,6 @@ class Mission
 						angles[]={6.2605233,0.31252003,0.0093350215};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3007,7 +3006,7 @@ class Mission
 					};
 					id=773;
 					type="I_medic_F";
-					atlOffset=-2.1934509e-005;
+					atlOffset=109.45681;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3117,7 +3116,6 @@ class Mission
 						angles[]={6.2605233,0.31252003,0.0093350215};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3125,7 +3123,7 @@ class Mission
 					};
 					id=789;
 					type="I_medic_F";
-					atlOffset=-2.1934509e-005;
+					atlOffset=109.52062;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3231,7 +3229,7 @@ class Mission
 			{
 			};
 			id=755;
-			atlOffset=-2.1934509e-005;
+			atlOffset=109.3826;
 		};
 		class Item7
 		{
@@ -3249,7 +3247,7 @@ class Mission
 						angles[]={6.256525,0,0.0093286335};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -3259,7 +3257,7 @@ class Mission
 					};
 					id=775;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.6702881e-005;
+					atlOffset=109.1469;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3369,7 +3367,6 @@ class Mission
 						angles[]={6.256525,0.31252003,0.0093286335};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3377,7 +3374,7 @@ class Mission
 					};
 					id=776;
 					type="I_medic_F";
-					atlOffset=-2.6702881e-005;
+					atlOffset=109.22632;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3487,7 +3484,6 @@ class Mission
 						angles[]={6.256525,0.31252003,0.0093286335};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3495,7 +3491,7 @@ class Mission
 					};
 					id=791;
 					type="I_medic_F";
-					atlOffset=-2.5749207e-005;
+					atlOffset=109.28947;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3601,7 +3597,7 @@ class Mission
 			{
 			};
 			id=774;
-			atlOffset=-2.6702881e-005;
+			atlOffset=109.1469;
 		};
 		class Item8
 		{
@@ -3619,7 +3615,7 @@ class Mission
 						angles[]={6.2591896,0,0.0066682254};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -3629,7 +3625,7 @@ class Mission
 					};
 					id=778;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.94725;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3739,7 +3735,6 @@ class Mission
 						angles[]={6.2591896,0.31252003,0.0066682254};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3747,7 +3742,7 @@ class Mission
 					};
 					id=779;
 					type="I_medic_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=109.02325;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3857,7 +3852,6 @@ class Mission
 						angles[]={6.2591896,0.31252003,0.0066682254};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -3865,7 +3859,7 @@ class Mission
 					};
 					id=793;
 					type="I_medic_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=109.10847;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3971,7 +3965,7 @@ class Mission
 			{
 			};
 			id=777;
-			atlOffset=-2.2888184e-005;
+			atlOffset=108.94725;
 		};
 		class Item9
 		{
@@ -3989,7 +3983,7 @@ class Mission
 						angles[]={6.2591896,0,0.0066682254};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -3999,7 +3993,7 @@ class Mission
 					};
 					id=781;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.84769;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4109,7 +4103,6 @@ class Mission
 						angles[]={6.2591896,0.31252003,0.0066682254};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -4117,7 +4110,7 @@ class Mission
 					};
 					id=782;
 					type="I_medic_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.92068;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4227,7 +4220,6 @@ class Mission
 						angles[]={6.2591896,0.31252003,0.0066682254};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -4235,7 +4227,7 @@ class Mission
 					};
 					id=795;
 					type="I_medic_F";
-					atlOffset=-2.3841858e-005;
+					atlOffset=108.99252;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4341,7 +4333,7 @@ class Mission
 			{
 			};
 			id=780;
-			atlOffset=-2.2888184e-005;
+			atlOffset=108.84769;
 		};
 		class Item10
 		{
@@ -4359,7 +4351,7 @@ class Mission
 						angles[]={6.259192,0,0.0026520467};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -4369,7 +4361,7 @@ class Mission
 					};
 					id=784;
 					type="I_Soldier_SL_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.81221;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4479,7 +4471,6 @@ class Mission
 						angles[]={6.259192,0.31252003,0.0039967569};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -4487,7 +4478,7 @@ class Mission
 					};
 					id=785;
 					type="I_medic_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.88184;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4597,7 +4588,6 @@ class Mission
 						angles[]={6.259192,0.31252003,0.0039967569};
 					};
 					side="Independent";
-					flags=4;
 					class Attributes
 					{
 						description="Bodyguard";
@@ -4605,7 +4595,7 @@ class Mission
 					};
 					id=797;
 					type="I_medic_F";
-					atlOffset=-2.2888184e-005;
+					atlOffset=108.96396;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4711,7 +4701,7 @@ class Mission
 			{
 			};
 			id=783;
-			atlOffset=-2.2888184e-005;
+			atlOffset=108.81221;
 		};
 		class Item11
 		{
@@ -4721,14 +4711,14 @@ class Mission
 			type="Empty";
 			angle=269.6839;
 			id=798;
-			atlOffset=185.97;
+			atlOffset=44.036633;
 		};
 		class Item12
 		{
 			dataType="Layer";
 			name="BLUFOR Base";
 			id=802;
-			atlOffset=185.97;
+			atlOffset=102.7;
 		};
 		class Item13
 		{
@@ -4746,7 +4736,7 @@ class Mission
 						angles[]={0,1.7032843,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -4756,6 +4746,7 @@ class Mission
 					};
 					id=806;
 					type="B_Soldier_SL_F";
+					atlOffset=100.23315;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4865,7 +4856,7 @@ class Mission
 						angles[]={0,1.4842978,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -4874,6 +4865,7 @@ class Mission
 					};
 					id=807;
 					type="B_Soldier_SL_F";
+					atlOffset=100.70389;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4983,7 +4975,7 @@ class Mission
 						angles[]={0,1.5185742,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Platoon Medic";
@@ -4991,6 +4983,7 @@ class Mission
 					};
 					id=808;
 					type="B_medic_F";
+					atlOffset=100.13528;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5058,6 +5051,7 @@ class Mission
 			{
 			};
 			id=805;
+			atlOffset=100.23315;
 		};
 		class Item14
 		{
@@ -5075,7 +5069,7 @@ class Mission
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -5084,6 +5078,7 @@ class Mission
 					};
 					id=810;
 					type="B_Soldier_SL_F";
+					atlOffset=102.39663;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5193,7 +5188,7 @@ class Mission
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5202,7 +5197,7 @@ class Mission
 					};
 					id=811;
 					type="B_Soldier_SL_F";
-					atlOffset=0.0010004044;
+					atlOffset=102.4945;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5312,7 +5307,7 @@ class Mission
 						angles[]={0,4.5875611,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -5321,7 +5316,7 @@ class Mission
 					};
 					id=812;
 					type="B_medic_F";
-					atlOffset=0.00074481964;
+					atlOffset=102.24834;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5393,7 +5388,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -5402,6 +5397,7 @@ class Mission
 					};
 					id=813;
 					type="B_Soldier_TL_F";
+					atlOffset=102.8783;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5511,7 +5507,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -5519,7 +5515,7 @@ class Mission
 					};
 					id=814;
 					type="B_soldier_AR_F";
-					atlOffset=1.9073486e-006;
+					atlOffset=102.56586;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5572,7 +5568,7 @@ class Mission
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -5580,7 +5576,7 @@ class Mission
 					};
 					id=815;
 					type="B_Soldier_A_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=102.79654;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5633,7 +5629,7 @@ class Mission
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -5641,7 +5637,7 @@ class Mission
 					};
 					id=816;
 					type="B_soldier_LAT_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=103.02149;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5694,7 +5690,7 @@ class Mission
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -5702,7 +5698,7 @@ class Mission
 					};
 					id=817;
 					type="B_Soldier_F";
-					atlOffset=0.001750946;
+					atlOffset=102.19196;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5774,7 +5770,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -5783,7 +5779,7 @@ class Mission
 					};
 					id=818;
 					type="B_Soldier_TL_F";
-					atlOffset=0.0010004044;
+					atlOffset=101.75848;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5893,7 +5889,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -5901,6 +5897,7 @@ class Mission
 					};
 					id=819;
 					type="B_soldier_AR_F";
+					atlOffset=101.26322;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5953,7 +5950,7 @@ class Mission
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -5961,6 +5958,7 @@ class Mission
 					};
 					id=820;
 					type="B_Soldier_A_F";
+					atlOffset=101.5594;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6013,7 +6011,7 @@ class Mission
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -6021,7 +6019,7 @@ class Mission
 					};
 					id=821;
 					type="B_soldier_LAT_F";
-					atlOffset=0.0017271042;
+					atlOffset=101.90001;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6074,7 +6072,7 @@ class Mission
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -6082,6 +6080,7 @@ class Mission
 					};
 					id=822;
 					type="B_Soldier_F";
+					atlOffset=103.20921;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6149,6 +6148,7 @@ class Mission
 			{
 			};
 			id=809;
+			atlOffset=102.39663;
 		};
 		class Item15
 		{
@@ -6166,7 +6166,7 @@ class Mission
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -6175,7 +6175,7 @@ class Mission
 					};
 					id=824;
 					type="B_Soldier_SL_F";
-					atlOffset=0.0030002594;
+					atlOffset=100.03254;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6285,7 +6285,7 @@ class Mission
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6294,7 +6294,7 @@ class Mission
 					};
 					id=825;
 					type="B_Soldier_SL_F";
-					atlOffset=0.0010004044;
+					atlOffset=100.15235;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6404,7 +6404,7 @@ class Mission
 						angles[]={0,4.5875611,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -6413,7 +6413,7 @@ class Mission
 					};
 					id=826;
 					type="B_medic_F";
-					atlOffset=0.0027475357;
+					atlOffset=99.826744;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6485,7 +6485,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -6494,7 +6494,7 @@ class Mission
 					};
 					id=827;
 					type="B_Soldier_TL_F";
-					atlOffset=0.0050001144;
+					atlOffset=100.59586;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6604,7 +6604,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -6612,7 +6612,7 @@ class Mission
 					};
 					id=828;
 					type="B_soldier_AR_F";
-					atlOffset=0.0060739517;
+					atlOffset=100.1393;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6665,7 +6665,7 @@ class Mission
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -6673,7 +6673,7 @@ class Mission
 					};
 					id=829;
 					type="B_Soldier_A_F";
-					atlOffset=0.0047388077;
+					atlOffset=100.41837;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6726,7 +6726,7 @@ class Mission
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -6734,7 +6734,7 @@ class Mission
 					};
 					id=830;
 					type="B_soldier_LAT_F";
-					atlOffset=0.0047426224;
+					atlOffset=100.71314;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6787,7 +6787,7 @@ class Mission
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -6795,7 +6795,7 @@ class Mission
 					};
 					id=831;
 					type="B_Soldier_F";
-					atlOffset=0.0042495728;
+					atlOffset=99.82663;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6867,7 +6867,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -6876,7 +6876,7 @@ class Mission
 					};
 					id=832;
 					type="B_Soldier_TL_F";
-					atlOffset=0.0039997101;
+					atlOffset=99.510536;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6986,7 +6986,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -6994,7 +6994,7 @@ class Mission
 					};
 					id=833;
 					type="B_soldier_AR_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=98.96344;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7043,11 +7043,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2747.5952,7.8576837,10161.264};
+						position[]={2747.5952,7.8576841,10161.264};
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -7055,7 +7055,7 @@ class Mission
 					};
 					id=834;
 					type="B_Soldier_A_F";
-					atlOffset=0.0040798187;
+					atlOffset=99.298836;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7104,11 +7104,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2747.6638,7.9656787,10159.257};
+						position[]={2747.6638,7.9656792,10159.257};
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -7116,7 +7116,7 @@ class Mission
 					};
 					id=835;
 					type="B_soldier_LAT_F";
-					atlOffset=0.0040822029;
+					atlOffset=99.595901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7169,7 +7169,7 @@ class Mission
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -7177,6 +7177,7 @@ class Mission
 					};
 					id=836;
 					type="B_Soldier_F";
+					atlOffset=100.95551;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7244,7 +7245,7 @@ class Mission
 			{
 			};
 			id=823;
-			atlOffset=0.0030002594;
+			atlOffset=100.03254;
 		};
 		class Item16
 		{
@@ -7258,11 +7259,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2740.3359,7.031693,10172.817};
+						position[]={2740.3359,7.0316935,10172.817};
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -7271,7 +7272,7 @@ class Mission
 					};
 					id=838;
 					type="B_Soldier_SL_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=97.416656;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7377,11 +7378,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2741.3049,7.1238265,10171.761};
+						position[]={2741.3049,7.123827,10171.761};
 						angles[]={0,4.6329069,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7390,7 +7391,7 @@ class Mission
 					};
 					id=839;
 					type="B_Soldier_SL_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=97.589531;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7500,7 +7501,7 @@ class Mission
 						angles[]={0,4.5875611,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -7509,7 +7510,7 @@ class Mission
 					};
 					id=840;
 					type="B_medic_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=97.162125;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7581,7 +7582,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -7590,6 +7591,7 @@ class Mission
 					};
 					id=841;
 					type="B_Soldier_TL_F";
+					atlOffset=98.146469;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7699,7 +7701,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -7707,7 +7709,7 @@ class Mission
 					};
 					id=842;
 					type="B_soldier_AR_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=97.634758;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7760,7 +7762,7 @@ class Mission
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -7768,6 +7770,7 @@ class Mission
 					};
 					id=843;
 					type="B_Soldier_A_F";
+					atlOffset=97.921524;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7816,11 +7819,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2747.5962,7.2471919,10166.883};
+						position[]={2747.5962,7.2471924,10166.883};
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -7828,7 +7831,7 @@ class Mission
 					};
 					id=844;
 					type="B_soldier_LAT_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=98.220505;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7877,11 +7880,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2747.5879,6.5717044,10173.103};
+						position[]={2747.5879,6.5717049,10173.103};
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -7889,6 +7892,7 @@ class Mission
 					};
 					id=845;
 					type="B_Soldier_F";
+					atlOffset=97.22393;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7960,7 +7964,7 @@ class Mission
 						angles[]={0,4.6183329,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -7969,6 +7973,7 @@ class Mission
 					};
 					id=846;
 					type="B_Soldier_TL_F";
+					atlOffset=96.833527;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8078,7 +8083,7 @@ class Mission
 						angles[]={0,4.6268644,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Autorifleman";
@@ -8086,7 +8091,7 @@ class Mission
 					};
 					id=847;
 					type="B_soldier_AR_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=96.624832;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8139,7 +8144,7 @@ class Mission
 						angles[]={0,4.7656431,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Assistant AR";
@@ -8147,7 +8152,7 @@ class Mission
 					};
 					id=848;
 					type="B_Soldier_A_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=96.729706;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8200,7 +8205,7 @@ class Mission
 						angles[]={0,4.7018862,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman AT";
@@ -8208,7 +8213,7 @@ class Mission
 					};
 					id=849;
 					type="B_soldier_LAT_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=96.958351;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8261,7 +8266,7 @@ class Mission
 						angles[]={0,4.7702265,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Rifleman";
@@ -8269,7 +8274,7 @@ class Mission
 					};
 					id=850;
 					type="B_Soldier_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=98.55188;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8337,7 +8342,7 @@ class Mission
 			{
 			};
 			id=837;
-			atlOffset=4.7683716e-007;
+			atlOffset=97.416656;
 		};
 	};
 	class Connections

@@ -74,11 +74,19 @@ class cfgMission {
 
         boatCoastAmountFactor = 0.75;
         boatTypes[] = {
-            "C_Boat_Civil_01_F",
-            "C_Boat_Civil_01_rescue_F",
-            "C_Boat_Transport_02_F",
-            "C_Scooter_Transport_01_F",
-            "C_Rubberboat"
+            "UK3CB_CCM_I_Fishing_Boat_VIV_FFV",
+            "UK3CB_NAP_I_Small_Boat_Wood"
         };
+    };
+};
+
+
+class CfgGradFortifications {
+boundingBoxSizeFactor = 0.5;
+
+  class UK3CB_NAP_B_Fishing_Boat_DSHKM {
+
+        surfaceNormalForced = 0;
+        canFloat = 1;
     };
 };
