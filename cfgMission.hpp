@@ -53,8 +53,8 @@ class cfgMission {
         carLocationAmountFactor = 0.150;
         carLocationMinDist = 30;
 
-        carRoadAmountFactor = 0.015;
-        carRoadMinDist = 300;
+        carRoadAmountFactor = 0.03;
+        carRoadMinDist = 200;
 
         carTypes[] = {
             "C_Offroad_01_F",

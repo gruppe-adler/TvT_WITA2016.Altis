@@ -23,7 +23,7 @@ class Vehicles {
         description = "Seats: 4";
         price = 2000;
         stock = 2;
-        code = "if (isServer) then { (_this select 2) disableTIEquipment true;  [(_this select 2), 10] call ace_cargo_fnc_setSpace; [{ ['Land_CanisterFuel_F', _this] call ace_cargo_fnc_loadItem; ['Land_CanisterFuel_F', _this] call ace_cargo_fnc_loadItem; }, [(_this select 2)], 2] call CBA_fnc_waitAndExecute; [(_this select 2), ['Ion',1], ['AddTread',0,'AddTread_Short',0]] call BIS_fnc_initVehicle; (_this select 2) addMagazineCargoGlobal ['50Rnd_570x28_SMG_03', 50]; };";
+        code = "if (isServer) then { (_this select 2) disableTIEquipment true;  [(_this select 2), 10] call ace_cargo_fnc_setSpace; [{ ['Land_CanisterFuel_F', _this] call ace_cargo_fnc_loadItem; ['Land_CanisterFuel_F', _this] call ace_cargo_fnc_loadItem; }, (_this select 2), 2] call CBA_fnc_waitAndExecute; [(_this select 2), ['Ion',1], ['AddTread',0,'AddTread_Short',0]] call BIS_fnc_initVehicle; (_this select 2) addMagazineCargoGlobal ['50Rnd_570x28_SMG_03', 50]; };";
     };
 
     class UK3CB_UN_I_UH1H {
